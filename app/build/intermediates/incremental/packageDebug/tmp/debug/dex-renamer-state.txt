@@ -1,0 +1,4 @@
+#Wed Jan 22 16:55:03 IRST 2020
+base.0=D\:\\project\\PtmAlborz\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

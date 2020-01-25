@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fristpage"
+    tools:context=".HomeActivity">
+
+
+    <ru.katso.livebutton.LiveButton
+        android:id="@+id/btn_laws"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+
+        android:clickable="true"
+        android:text="قوانین و مقررات"
+        style="@style/Button_style_text"
+        livebutton:backgroundColor="#2D9385"
+        livebutton:corners="10dp"
+        livebutton:normalHeight="6dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:shadowColor="#18443E" />
+
+    <ru.katso.livebutton.LiveButton
+        android:id="@+id/btn_weblog"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_laws"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:text="وبلاگ"
+        style="@style/Button_style_text"
+        livebutton:backgroundColor="#2D9385"
+        livebutton:corners="10dp"
+        livebutton:normalHeight="6dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:shadowColor="#18443E" />
+
+</RelativeLayout>

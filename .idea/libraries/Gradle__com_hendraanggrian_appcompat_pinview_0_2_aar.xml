@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hendraanggrian.appcompat:pinview:0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e0e067314b03c6daa27ce216716f66bc/pinview-0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e0e067314b03c6daa27ce216716f66bc/pinview-0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hendraanggrian.appcompat/pinview/0.2/1faf586b3050a7b3d0d53da9fdc6d0a63ce6acf7/pinview-0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hendraanggrian.appcompat/pinview/0.2/27d41b9cc6f74b4c044e6dd0cbfca847a17bc5f/pinview-0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

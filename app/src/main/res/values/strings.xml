@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WebEskan</string>
+    <string name="title_activity_home">صفحه اصلی</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">سامانه مدیریت مالی و حسابداری ساختمان</string>
+    <string name="nav_header_subtitle">شرکت ptm alborz</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">صفحه اصلی</string>
+    <string name="menu_gallery">قوانین و مقررات</string>
+    <string name="menu_slideshow">پرسش های متداول</string>
+    <string name="menu_tools">ارتباط با ما</string>
+    <string name="menu_share">دعوت از دوستان</string>
+    <string name="menu_send">خروج</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
