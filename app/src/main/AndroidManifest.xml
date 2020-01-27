@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
     package="com.azarnush.ptmalborz">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Rules_webeskanActivity"></activity>
+        <activity android:name=".WebLogActivity"></activity>
+        <activity android:name=".Rules_webeskanActivity" />
         <activity android:name=".VotesActivity" />
         <activity android:name=".Question_and_answerActivity" />
         <activity android:name=".All_lawsActivity" />

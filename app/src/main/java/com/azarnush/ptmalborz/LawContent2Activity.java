@@ -6,6 +6,9 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
@@ -23,7 +26,7 @@ public class LawContent2Activity extends AppCompatActivity {
     TextView txt_law_title;
     TextView txt_law_taq;
     String number_page = "";
-    ImageView share;
+
     String my_text = "";
 
     @SuppressLint("NewApi")
@@ -35,18 +38,10 @@ public class LawContent2Activity extends AppCompatActivity {
         txt_content = findViewById(R.id.txt_content);
         txt_law_title = findViewById(R.id.txt_law_title);
         txt_law_taq = findViewById(R.id.txt_law_taq);
-        share = findViewById(R.id.image_share);
+
         number_page = getIntent().getExtras().getString("number_page");
 
-        share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_TEXT, my_text);
-                startActivity(Intent.createChooser(intent, "اشتراک گذاری متن با "));
-            }
-        });
+
         switch (number_page) {
             case "1.0":
                 LawInfo2 lawInfo22 = Law_of_PossessionActivity.lawInfos2.get(0);
@@ -129,5 +124,27 @@ public class LawContent2Activity extends AppCompatActivity {
 
                 break;
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.home, menu);
+        return super.onCreateOptionsMenu(menu);
+
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId())
+        {
+            case R.id.action_share:
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_TEXT, my_text);
+                startActivity(Intent.createChooser(intent, "اشتراک گذاری متن با "));
+
+                break;
+
+        }
+        return true;
     }
 }

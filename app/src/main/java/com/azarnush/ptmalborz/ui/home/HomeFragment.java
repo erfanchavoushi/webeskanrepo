@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.azarnush.ptmalborz.All_lawsActivity;
 import com.azarnush.ptmalborz.R;
+import com.azarnush.ptmalborz.WebLogActivity;
 
 public class HomeFragment extends Fragment {
 
@@ -27,10 +28,18 @@ public class HomeFragment extends Fragment {
 
          View root = inflater.inflate(R.layout.fragment_home ,container, false);
          btn_laws = root.findViewById(R.id.btn_laws);
+        btn_weblog = root.findViewById(R.id.btn_weblog);
          btn_laws.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
                  startActivity(new Intent(getContext(), All_lawsActivity.class));
+             }
+         });
+
+         btn_weblog.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 startActivity(new Intent(getContext(), WebLogActivity.class));
              }
          });
 

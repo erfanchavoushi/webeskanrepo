@@ -1191,7 +1191,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
+id action_share
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1283,7 +1283,6 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
-id image_share
 id img_lawGroup
 id img_lawpossession
 id info
@@ -1448,6 +1447,7 @@ id visible
 id withText
 id wrap
 id wrap_content
+id wv_weblog
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1518,6 +1518,7 @@ layout activity_rules_webeskan
 layout activity_splash
 layout activity_user_registration
 layout activity_votes
+layout activity_web_log
 layout app_bar_home
 layout content_home
 layout custom_dialog

@@ -20,7 +20,7 @@ public class All_lawsActivity extends AppCompatActivity implements View.OnClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_laws);
-        Toast.makeText(this , "تست گیت", Toast.LENGTH_LONG).show();
+
 
         findViews();
         btn_LawOfPossession.setOnClickListener(this);

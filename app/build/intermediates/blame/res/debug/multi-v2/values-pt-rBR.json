@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\project\\PtmAlborz\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+            "outputFile": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\d6f60b7f7ea9d98ebcfa165d1a1e72ec\\jetified-navigation-ui-2.1.0\\res\\values-pt-rBR\\values-pt-rBR.xml",

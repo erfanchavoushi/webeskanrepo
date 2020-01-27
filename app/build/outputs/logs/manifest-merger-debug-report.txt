@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
-INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
-INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
-INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
 MERGED from [io.realm:realm-android-library:6.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\51ff33129ebb2c159eb86875c420b944\jetified-realm-android-library-6.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\d6f60b7f7ea9d98ebcfa165d1a1e72ec\jetified-navigation-ui-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\f61c674e562d822ba4c906983bddd35d\material-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -54,22 +54,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ptm\.gradle\cach
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\98d0a6c82463f6d75225ae433d1f7382\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\93f238d6f7c45852cbd41160435f972a\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\206656cee85f516f6d3d08423c69f302\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
-INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
-INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
+INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
+INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
 	package
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-64:12
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:11-69
@@ -82,7 +82,7 @@ ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:7:5-79
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:7:22-76
 application
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:9:5-62:19
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:9:5-63:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\f61c674e562d822ba4c906983bddd35d\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\f61c674e562d822ba4c906983bddd35d\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.ornach.richtext:richtext:1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\5191ce4a2ea790931b608936603a1ac5\jetified-richtext-1.0\AndroidManifest.xml:11:5-17:19
@@ -117,108 +117,112 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pt
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:16:9-44
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:10:9-42
+activity#com.azarnush.ptmalborz.WebLogActivity
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-61
+	android:name
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-49
 activity#com.azarnush.ptmalborz.Rules_webeskanActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-69
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-60
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-57
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-57
 activity#com.azarnush.ptmalborz.VotesActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-51
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-51
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-48
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-48
 activity#com.azarnush.ptmalborz.Question_and_answerActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-65
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:9-65
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-62
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:19-62
 activity#com.azarnush.ptmalborz.All_lawsActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:9-54
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:9-54
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:19-51
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:19-51
 activity#com.azarnush.ptmalborz.RegulationsActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:9-57
-	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:19-54
-activity#com.azarnush.ptmalborz.LawContent2Activity
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-57
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-54
+activity#com.azarnush.ptmalborz.LawContent2Activity
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:9-57
+	android:name
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:19-54
 activity#com.azarnush.ptmalborz.Law_of_PossessionActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:9-63
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:9-63
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:19-60
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:19-60
 activity#com.azarnush.ptmalborz.SplashActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:9-34:20
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:25:9-35:20
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:27:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:28:13-49
 	android:noHistory
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:27:13-37
 	android:theme
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:28:13-56
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:29:13-56
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:25:13-43
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:26:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:30:13-34:29
 action#android.intent.action.MAIN
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:33:17-77
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.azarnush.ptmalborz.LawInfoActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:35:9-38:52
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:36:9-39:52
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:38:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:39:13-49
 	android:label
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:37:13-40
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:38:13-40
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:36:13-44
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:37:13-44
 activity#com.azarnush.ptmalborz.HomeActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:39:9-42:59
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:40:9-43:59
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:41:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:42:13-49
 	android:theme
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:42:13-56
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:43:13-56
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:41:13-41
 activity#com.azarnush.ptmalborz.User_registrationActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:43:9-45:52
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:44:9-46:52
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:45:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:46:13-49
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:44:13-54
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:45:13-54
 activity#com.azarnush.ptmalborz.MainActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:46:9-49:52
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:47:9-50:52
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:49:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:50:13-49
 	android:noHistory
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:47:13-41
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:48:13-41
 activity#com.azarnush.ptmalborz.Logon‹type‹selection
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:50:9-53:52
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:51:9-54:52
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:54:13-49
 	android:noHistory
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:51:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:52:13-49
 activity#com.azarnush.ptmalborz.Get_number
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:54:9-57:52
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:55:9-58:52
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:57:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:58:13-49
 	android:noHistory
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:56:13-37
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:57:13-37
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:55:13-39
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:56:13-39
 activity#com.azarnush.ptmalborz.Login_with_number
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:58:9-61:52
+ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:59:9-62:52
 	android:screenOrientation
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:61:13-49
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:62:13-49
 	android:noHistory
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:60:13-37
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:59:13-46
+		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:60:13-46
 uses-sdk
 INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
