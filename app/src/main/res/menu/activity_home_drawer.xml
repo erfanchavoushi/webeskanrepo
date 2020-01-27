@@ -13,6 +13,10 @@
             android:icon="@drawable/law"
             android:title="قوانین و مقررات" />
         <item
+            android:id="@+id/nav_weblog"
+            android:icon="@drawable/ic_weblog"
+            android:title="وبلاگ" />
+        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_help_black_24dp"
             android:title="@string/menu_slideshow" />
@@ -20,6 +24,10 @@
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_contacts_black_24dp"
             android:title="@string/menu_tools" />
+        <item
+            android:id="@+id/nav_contactUs"
+            android:icon="@drawable/ic_phone"
+            android:title="تماس با ما" />
     </group>
 
     <item android:title="Communicate">
