@@ -12,7 +12,7 @@ public class WebLogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_log);
 
-        WebView myWebView = (WebView) findViewById(R.id.wv_weblog);
+        WebView myWebView = findViewById(R.id.wv_weblog);
         myWebView.loadUrl("https://webeskan.com/Blog");
     }
 }
