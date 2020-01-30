@@ -1,19 +1,22 @@
 package com.azarnush.ptmalborz;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
-import android.widget.ImageView;
+import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.azarnush.ptmalborz.models.LawInfo2;
 import com.azarnush.ptmalborz.models.LawInfo3;
@@ -21,30 +24,31 @@ import com.azarnush.ptmalborz.models.LawInfo4;
 import com.azarnush.ptmalborz.models.LawInfo5;
 import com.azarnush.ptmalborz.models.LawInfo6;
 
-public class LawContent2Activity extends AppCompatActivity {
+public class LawContent2Fragment extends Fragment {
     TextView txt_content;
     TextView txt_law_title;
     TextView txt_law_taq;
     String number_page = "";
-
     String my_text = "";
+    View root;
+    Context context;
 
-    @SuppressLint("NewApi")
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_law_content2);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        root = inflater.inflate(R.layout.fragment_law_content2, container, false);
+        context = root.getContext();
 
-        txt_content = findViewById(R.id.txt_content);
-        txt_law_title = findViewById(R.id.txt_law_title);
-        txt_law_taq = findViewById(R.id.txt_law_taq);
+        txt_content = root.findViewById(R.id.txt_content);
+        txt_law_title = root.findViewById(R.id.txt_law_title);
+        txt_law_taq = root.findViewById(R.id.txt_law_taq);
 
-        number_page = getIntent().getExtras().getString("number_page");
+        number_page = getActivity().getIntent().getExtras().getString("number_page");
 
 
         switch (number_page) {
             case "1.0":
-                LawInfo2 lawInfo22 = Law_of_PossessionActivity.lawInfos2.get(0);
+                LawInfo2 lawInfo22 = Law_of_PossessionFragment.lawInfos2.get(0);
                 txt_law_title.setText(lawInfo22.getLawTitle());
                 txt_content.setText(Html.fromHtml(lawInfo22.getLawContent()));
                 my_text = lawInfo22.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo22.getLawContent());
@@ -124,14 +128,21 @@ public class LawContent2Activity extends AppCompatActivity {
 
                 break;
         }
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.home, menu);
-        return super.onCreateOptionsMenu(menu);
+
+
+
+        return root;
 
     }
+
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        MenuInflater inflater=getActivity().getMenuInflater();
+//        inflater.inflate(R.menu.home, menu);
+//        return true;
+
+ //   }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId())
@@ -147,4 +158,6 @@ public class LawContent2Activity extends AppCompatActivity {
         }
         return true;
     }
+
+
 }

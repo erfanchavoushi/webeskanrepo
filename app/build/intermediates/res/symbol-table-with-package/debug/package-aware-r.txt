@@ -1110,7 +1110,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_person_outline_black_24dp
+drawable ic_phone
 drawable ic_share_black_24dp
+drawable ic_weblog
 drawable law
 drawable logo
 drawable mtrl_snackbar_background
@@ -1306,8 +1308,9 @@ id mobile_navigation
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id nav_all_laws
+id nav_contactUs
 id nav_controller_view_tag
-id nav_gallery
 id nav_home
 id nav_host_fragment
 id nav_send
@@ -1315,6 +1318,7 @@ id nav_share
 id nav_slideshow
 id nav_tools
 id nav_view
+id nav_weblog
 id navigation_header_container
 id never
 id none
@@ -1503,12 +1507,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_all_laws
 layout activity_get_number
 layout activity_home
-layout activity_law_content2
 layout activity_law_info
-layout activity_law_of__possession
 layout activity_login_with_number
 layout activity_logon_type_selection
 layout activity_main
@@ -1518,7 +1519,6 @@ layout activity_rules_webeskan
 layout activity_splash
 layout activity_user_registration
 layout activity_votes
-layout activity_web_log
 layout app_bar_home
 layout content_home
 layout custom_dialog
@@ -1536,12 +1536,16 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_all_laws
 layout fragment_home
+layout fragment_law_content2
+layout fragment_law_of__possession
 layout fragment_laws
 layout fragment_send
 layout fragment_share
 layout fragment_slideshow
 layout fragment_tools
+layout fragment_web_log
 layout lawgroup_list_row
 layout lawinfo_list_row
 layout mtrl_layout_snackbar

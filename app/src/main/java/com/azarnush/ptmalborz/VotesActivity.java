@@ -45,7 +45,7 @@ public class VotesActivity extends AppCompatActivity {
 
         realm5 = Realm.getDefaultInstance();
         Integer chekeRealm = realm5.where(LawInfo5.class).findAll().size();
-        All_lawsActivity a = new All_lawsActivity();
+        All_lawsFragment a = new All_lawsFragment();
 
         if (chekeRealm == 0) {
             if (a.isConnected()) {

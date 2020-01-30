@@ -65,8 +65,6 @@ INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
-	xmlns:tools
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:2:1-65:12
@@ -117,7 +115,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\pt
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:16:9-44
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:10:9-42
-activity#com.azarnush.ptmalborz.WebLogActivity
+activity#com.azarnush.ptmalborz.WebLogFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-61
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-49
@@ -133,19 +131,15 @@ activity#com.azarnush.ptmalborz.Question_and_answerActivity
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:9-65
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:19-62
-activity#com.azarnush.ptmalborz.All_lawsActivity
-ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:9-54
-	android:name
-		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:19-51
 activity#com.azarnush.ptmalborz.RegulationsActivity
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-57
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-54
-activity#com.azarnush.ptmalborz.LawContent2Activity
+activity#com.azarnush.ptmalborz.LawContent2Fragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:9-57
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:19-54
-activity#com.azarnush.ptmalborz.Law_of_PossessionActivity
+activity#com.azarnush.ptmalborz.Law_of_PossessionFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:9-63
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:19-60

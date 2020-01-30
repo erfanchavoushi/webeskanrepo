@@ -14,14 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".WebLogActivity"></activity>
+        <activity android:name=".WebLogFragment"></activity>
         <activity android:name=".Rules_webeskanActivity" />
         <activity android:name=".VotesActivity" />
         <activity android:name=".Question_and_answerActivity" />
-        <activity android:name=".All_lawsActivity" />
+
         <activity android:name=".RegulationsActivity" />
-        <activity android:name=".LawContent2Activity" />
-        <activity android:name=".Law_of_PossessionActivity" />
+        <activity android:name=".LawContent2Fragment" />
+        <activity android:name=".Law_of_PossessionFragment" />
         <activity
             android:name=".SplashActivity"
             android:noHistory="true"

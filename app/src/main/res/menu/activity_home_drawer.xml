@@ -8,10 +8,15 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="صفحه اصلی" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/law"
-            android:title="قوانین و مقررات" />
+
+            <item
+                android:title="قوانین و مقررات"
+                android:id="@+id/nav_all_laws"
+                android:icon="@drawable/law">
+
+            </item>
+
+
         <item
             android:id="@+id/nav_weblog"
             android:icon="@drawable/ic_weblog"

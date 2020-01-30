@@ -6,13 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.azarnush.ptmalborz.LawContent2Activity;
+import com.azarnush.ptmalborz.LawContent2Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo6;
 
@@ -45,7 +44,7 @@ public class Rules_webeskan_adapter extends RecyclerView.Adapter<Rules_webeskan_
             @Override
             public void onClick(View view) {
 
-                Intent texts =new Intent(view.getContext() , LawContent2Activity.class);
+                Intent texts =new Intent(view.getContext() , LawContent2Fragment.class);
                 switch (position){
                     case 0 : texts.putExtra("number_page" , "5.0");
                         view.getContext().startActivity(texts);

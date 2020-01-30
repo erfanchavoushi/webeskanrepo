@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:livebutton="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back4"
-    tools:context=".HomeActivity">
+   >
 
 
     <ru.katso.livebutton.LiveButton

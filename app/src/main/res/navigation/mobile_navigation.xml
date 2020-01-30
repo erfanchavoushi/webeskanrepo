@@ -12,10 +12,15 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.azarnush.ptmalborz.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_all_laws"
+        android:name="com.azarnush.ptmalborz.All_lawsFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_laws" />
+        tools:layout="@layout/fragment_all_laws" />
+    <fragment
+        android:id="@+id/nav_weblog"
+        android:name="com.azarnush.ptmalborz.WebLogFragment"
+        android:label="وبلاگ"
+        tools:layout="@layout/fragment_web_log" />
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -40,4 +45,5 @@
         android:name="com.azarnush.ptmalborz.ui.send.SendFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
+
 </navigation>

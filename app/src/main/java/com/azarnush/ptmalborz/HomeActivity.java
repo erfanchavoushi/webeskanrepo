@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.GravityCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -35,7 +37,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery,R.id.nav_weblog , R.id.nav_slideshow,
+                R.id.nav_home, R.id.nav_all_laws,R.id.nav_weblog , R.id.nav_slideshow,
                 R.id.nav_tools,R.id.nav_contactUs , R.id.nav_share, R.id.nav_send)
                 .setDrawerLayout(drawer)
                 .build();
@@ -80,6 +82,18 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        return false;
+       Fragment fragment = null;
+        switch (menuItem.getItemId()){
+            case R.id.nav_all_laws:
+                fragment = new All_lawsFragment();
+                break;
+            case R.id.nav_weblog:
+                fragment = new WebLogFragment();
+                break;
+        }
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+
+        return true;
     }
 }

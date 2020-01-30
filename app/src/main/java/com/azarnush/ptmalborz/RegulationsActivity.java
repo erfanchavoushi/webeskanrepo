@@ -15,7 +15,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.azarnush.ptmalborz.Adapter.Regulations_adapter;
-import com.azarnush.ptmalborz.models.LawInfo2;
 import com.azarnush.ptmalborz.models.LawInfo3;
 
 import org.json.JSONArray;
@@ -45,7 +44,7 @@ public class RegulationsActivity extends AppCompatActivity {
 
        realm = Realm.getDefaultInstance();
         Integer chekeRealm = realm.where(LawInfo3.class).findAll().size();
-        All_lawsActivity a = new All_lawsActivity();
+        All_lawsFragment a = new All_lawsFragment();
 
         if (chekeRealm == 0) {
             if (a.isConnected()) {

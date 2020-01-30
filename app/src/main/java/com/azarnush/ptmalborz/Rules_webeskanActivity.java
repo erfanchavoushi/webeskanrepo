@@ -44,7 +44,7 @@ public class Rules_webeskanActivity extends AppCompatActivity {
 
         realm6 = Realm.getDefaultInstance();
         Integer chekeRealm = realm6.where(LawInfo6.class).findAll().size();
-        All_lawsActivity a = new All_lawsActivity();
+        All_lawsFragment a = new All_lawsFragment();
 
         if (chekeRealm == 0) {
             if (a.isConnected()) {

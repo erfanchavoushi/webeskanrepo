@@ -43,7 +43,7 @@ public class Question_and_answerActivity extends AppCompatActivity {
 
         realm4 = Realm.getDefaultInstance();
         Integer chekeRealm = realm4.where(LawInfo4.class).findAll().size();
-        All_lawsActivity a = new All_lawsActivity();
+        All_lawsFragment a = new All_lawsFragment();
 
         if (chekeRealm == 0) {
             if (a.isConnected()) {
