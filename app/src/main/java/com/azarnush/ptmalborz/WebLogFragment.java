@@ -17,6 +17,7 @@ public class WebLogFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_web_log, container, false);
+        HomeActivity.toolbar.setTitle("وبلاگ");
 
         WebView myWebView = root.findViewById(R.id.wv_weblog);
         myWebView.loadUrl("https://webeskan.com/Blog");

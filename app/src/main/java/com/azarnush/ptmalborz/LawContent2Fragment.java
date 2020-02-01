@@ -2,22 +2,19 @@ package com.azarnush.ptmalborz;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.azarnush.ptmalborz.Adapter.LawInfo2_adapter;
 import com.azarnush.ptmalborz.models.LawInfo2;
 import com.azarnush.ptmalborz.models.LawInfo3;
 import com.azarnush.ptmalborz.models.LawInfo4;
@@ -43,7 +40,7 @@ public class LawContent2Fragment extends Fragment {
         txt_law_title = root.findViewById(R.id.txt_law_title);
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
 
-        number_page = getActivity().getIntent().getExtras().getString("number_page");
+        number_page = LawInfo2_adapter.number_page;
 
 
         switch (number_page) {
@@ -58,7 +55,7 @@ public class LawContent2Fragment extends Fragment {
 
                 break;
             case "2.0":
-                LawInfo3 lawInfo33 = RegulationsActivity.lawinfos.get(0);
+                LawInfo3 lawInfo33 = RegulationsFragment.lawinfos.get(0);
                 txt_law_title.setText(lawInfo33.getLawTitle());
                 txt_content.setText(Html.fromHtml(lawInfo33.getLawContent()));
                 my_text = lawInfo33.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo33.getLawContent());

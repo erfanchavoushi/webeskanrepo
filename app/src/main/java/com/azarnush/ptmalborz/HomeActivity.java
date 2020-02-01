@@ -20,17 +20,22 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public  class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
     DrawerLayout drawer;
-
+   public static FragmentManager fragmentManager ;
+    public  static Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
+        fragmentManager = getSupportFragmentManager();
         setSupportActionBar(toolbar);
+
+
+
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -85,13 +90,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
        Fragment fragment = null;
         switch (menuItem.getItemId()){
             case R.id.nav_all_laws:
+
                 fragment = new All_lawsFragment();
                 break;
             case R.id.nav_weblog:
                 fragment = new WebLogFragment();
                 break;
+            case R.id.nav_law_of_possession:
+                fragment = new Law_of_PossessionFragment();
+                break;
         }
-        FragmentManager fragmentManager = getSupportFragmentManager();
+
         fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
 
         return true;

@@ -19,7 +19,7 @@
         <activity android:name=".VotesActivity" />
         <activity android:name=".Question_and_answerActivity" />
 
-        <activity android:name=".RegulationsActivity" />
+        <activity android:name=".RegulationsFragment" />
         <activity android:name=".LawContent2Fragment" />
         <activity android:name=".Law_of_PossessionFragment" />
         <activity
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LawInfoActivity"
+            android:name=".LawInfoFragment"
             android:label="لیست مطالب "
             android:screenOrientation="portrait" />
         <activity

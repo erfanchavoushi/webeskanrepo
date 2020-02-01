@@ -1284,7 +1284,6 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
-id imageView6
 id img_lawGroup
 id img_lawpossession
 id info
@@ -1313,6 +1312,7 @@ id nav_contactUs
 id nav_controller_view_tag
 id nav_home
 id nav_host_fragment
+id nav_law_of_possession
 id nav_send
 id nav_share
 id nav_slideshow
@@ -1509,12 +1509,10 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_get_number
 layout activity_home
-layout activity_law_info
 layout activity_login_with_number
 layout activity_logon_type_selection
 layout activity_main
 layout activity_question_and_answer
-layout activity_regulations
 layout activity_rules_webeskan
 layout activity_splash
 layout activity_user_registration
@@ -1539,8 +1537,9 @@ layout design_text_input_password_icon
 layout fragment_all_laws
 layout fragment_home
 layout fragment_law_content2
+layout fragment_law_info
 layout fragment_law_of__possession
-layout fragment_laws
+layout fragment_regulations
 layout fragment_send
 layout fragment_share
 layout fragment_slideshow

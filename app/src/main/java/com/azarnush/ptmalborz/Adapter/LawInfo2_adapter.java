@@ -8,7 +8,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.azarnush.ptmalborz.HomeActivity;
 import com.azarnush.ptmalborz.LawContent2Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo2;
@@ -17,11 +21,13 @@ import java.util.List;
 public class LawInfo2_adapter extends RecyclerView.Adapter<LawInfo2_adapter.LawInfo2ViewHolder> {
     private List<LawInfo2> lawinfos2;
     private Context mContext;
-
+    public  static String number_page = "";
+    Fragment fragment;
 
     public LawInfo2_adapter(List<LawInfo2> lawinfos2, Context mContext) {
         this.lawinfos2 = lawinfos2;
         this.mContext = mContext;
+
     }
 
     @Override
@@ -40,11 +46,18 @@ public class LawInfo2_adapter extends RecyclerView.Adapter<LawInfo2_adapter.LawI
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent texts =new Intent(view.getContext() , LawContent2Fragment.class);
+
+
                 switch (position) {
                     case 0:
-                        texts.putExtra("number_page", "1.0");
-                        view.getContext().startActivity(texts);
+                        number_page = "1.0";
+                        fragment = new LawContent2Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+                        break;
+                    case 1:
+                        number_page = "2.0";
+                        fragment = new LawContent2Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
                         break;
 
 

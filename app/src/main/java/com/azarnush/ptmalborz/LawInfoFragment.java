@@ -1,10 +1,15 @@
 package com.azarnush.ptmalborz;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -20,7 +25,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class LawInfoActivity extends AppCompatActivity {
+public class LawInfoFragment extends Fragment {
 
 
     RecyclerView recyclerViewinfo;
@@ -28,25 +33,26 @@ public class LawInfoActivity extends AppCompatActivity {
     private ArrayList<LawInfo> lawInfos = new ArrayList<>();
     Context context_lawinfo;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_law_info);
-
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_law_info ,container, false);
+            
         sendJsonArrayRequest_lawsInfos();
 
-        context_lawinfo = getApplicationContext();
+        context_lawinfo = getContext();
 
-        recyclerViewinfo = findViewById(R.id.recycler_lawinfo);
+        recyclerViewinfo = root.findViewById(R.id.recycler_lawinfo);
         adapter = new LawInfo_adapter(lawInfos, context_lawinfo);
 
         recyclerViewinfo.setLayoutManager(new LinearLayoutManager(context_lawinfo));
         recyclerViewinfo.setAdapter(adapter);
-
+        return root;
     }
 
+
     public void sendJsonArrayRequest_lawsInfos() {
-        RequestQueue queue = Volley.newRequestQueue(this);
+        RequestQueue queue = Volley.newRequestQueue(context_lawinfo);
         String url = "http://api.webeskan.com/api/v1/laws/get-laws-by-group-id/1";
 
         Response.Listener<JSONArray> listener = new Response.Listener<JSONArray>() {

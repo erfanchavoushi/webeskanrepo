@@ -1,11 +1,16 @@
 package com.azarnush.ptmalborz;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -25,7 +30,7 @@ import java.util.ArrayList;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class RegulationsActivity extends AppCompatActivity {
+public class RegulationsFragment extends Fragment {
     RecyclerView recycler_regulations;
     private Regulations_adapter adapter;
     public static ArrayList<LawInfo3> lawinfos = new ArrayList<>();
@@ -36,13 +41,14 @@ public class RegulationsActivity extends AppCompatActivity {
     public static String lawTag3;
     public static String lawSummery3;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regulations);
-        context_regulations = getApplicationContext();
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+      View root = inflater.inflate(R.layout.fragment_regulations, container, false);
 
-       realm = Realm.getDefaultInstance();
+        context_regulations = getContext();
+
+        realm = Realm.getDefaultInstance();
         Integer chekeRealm = realm.where(LawInfo3.class).findAll().size();
         All_lawsFragment a = new All_lawsFragment();
 
@@ -50,17 +56,19 @@ public class RegulationsActivity extends AppCompatActivity {
             if (a.isConnected()) {
                 sendJsonArrayRequest_lawsInfos3();
             } else
-                Toast.makeText(this, "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
+                Toast.makeText(context_regulations, "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
 
         } else {
             readFromRealmDatabase();
         }
 
-        recycler_regulations = findViewById(R.id.recycler_regulations);
+        recycler_regulations = root.findViewById(R.id.recycler_regulations);
         adapter = new Regulations_adapter(lawinfos, context_regulations);
         recycler_regulations.setLayoutManager(new LinearLayoutManager(context_regulations));
         recycler_regulations.setAdapter(adapter);
+        return root;
     }
+
 
     private void writeToRealmDatabase() {
         realm.beginTransaction();
@@ -102,7 +110,7 @@ public class RegulationsActivity extends AppCompatActivity {
     }
 
     public void sendJsonArrayRequest_lawsInfos3() {
-        RequestQueue queue = Volley.newRequestQueue(this);
+        RequestQueue queue = Volley.newRequestQueue(context_regulations);
         String url = "http://api.webeskan.com/api/v1/laws/get-laws-by-group-id/3";
 
         Response.Listener<JSONArray> listener = new Response.Listener<JSONArray>() {

@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.azarnush.ptmalborz.All_lawsFragment;
+import com.azarnush.ptmalborz.HomeActivity;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.WebLogFragment;
 
@@ -37,8 +38,8 @@ public class HomeFragment extends Fragment {
              @Override
              public void onClick(View view) {
                 Fragment fragment = new All_lawsFragment();
-                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                 fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+                 HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+
              }
          });
 
@@ -46,8 +47,7 @@ public class HomeFragment extends Fragment {
              @Override
              public void onClick(View view) {
                  Fragment fragment = new WebLogFragment();
-                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                 fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+                 HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
              }
          });
 

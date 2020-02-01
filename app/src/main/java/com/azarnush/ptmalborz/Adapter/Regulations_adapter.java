@@ -9,8 +9,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.azarnush.ptmalborz.HomeActivity;
 import com.azarnush.ptmalborz.LawContent2Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo3;
@@ -20,6 +22,7 @@ import java.util.List;
 public class Regulations_adapter extends RecyclerView.Adapter<Regulations_adapter.Regulations_ViewHolder> {
     private List<LawInfo3> lawinfos3;
     private Context mContext;
+    public  static String number_page = "";
 
 
     public Regulations_adapter(List<LawInfo3> lawinfos3, Context mContext) {
@@ -44,10 +47,11 @@ public class Regulations_adapter extends RecyclerView.Adapter<Regulations_adapte
             @Override
             public void onClick(View view) {
 
-                Intent texts =new Intent(view.getContext() , LawContent2Fragment.class);
                 switch (position){
-                    case 0 : texts.putExtra("number_page" , "2.0");
-                        view.getContext().startActivity(texts);
+                    case 0 :
+                        number_page = "2.0";
+                        Fragment fragment = new LawContent2Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
                         break;
                 }
             }
