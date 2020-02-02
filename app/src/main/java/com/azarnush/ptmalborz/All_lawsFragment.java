@@ -95,7 +95,8 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
 
         }
 
-        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment)
+                .addToBackStack(null).commit();
 
     }
 }

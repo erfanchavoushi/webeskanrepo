@@ -52,12 +52,12 @@ public class LawInfo2_adapter extends RecyclerView.Adapter<LawInfo2_adapter.LawI
                     case 0:
                         number_page = "1.0";
                         fragment = new LawContent2Fragment();
-                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
                         break;
                     case 1:
                         number_page = "2.0";
                         fragment = new LawContent2Fragment();
-                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
                         break;
 
 
