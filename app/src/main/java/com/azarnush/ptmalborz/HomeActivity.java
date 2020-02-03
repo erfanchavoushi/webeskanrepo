@@ -6,11 +6,13 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.GravityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -22,8 +24,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+public class HomeActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     DrawerLayout drawer;
@@ -52,7 +53,31 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
+            @Override
+            public void onDestinationChanged(@NonNull NavController controller,
+                                             @NonNull NavDestination destination, @Nullable Bundle arguments) {
+                Fragment fragment = null;
+                switch (destination.getId()){
+                    case R.id.nav_home:
+                        fragment = new HomeFragment();
+                       break;
+                    case R.id.nav_all_laws:
+                       fragment = new All_lawsFragment();
+                       break;
+                    case R.id.nav_weblog:
+                        fragment = new WebLogFragment();
+                        break;
+
+                }
+                HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment)
+                        .addToBackStack(null).commit();
+
+            }
+        });
+
     }
+
 
     @Override
     public void onBackPressed() {
@@ -91,27 +116,4 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-
-        fragment = null;
-        switch (menuItem.getItemId()) {
-            case R.id.nav_home:
-                fragment = new HomeFragment();
-                break;
-
-            case R.id.nav_all_laws:
-
-                fragment = new All_lawsFragment();
-                break;
-            case R.id.nav_weblog:
-                fragment = new WebLogFragment();
-                break;
-
-        }
-
-        fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
-
-        return true;
-    }
 }

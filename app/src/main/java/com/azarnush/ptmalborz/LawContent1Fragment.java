@@ -115,6 +115,7 @@ public class LawContent1Fragment extends Fragment {
     }
 
 
+
     //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        MenuInflater inflater=getActivity().getMenuInflater();
