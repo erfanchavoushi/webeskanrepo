@@ -33,7 +33,7 @@ import io.realm.RealmResults;
 public class RegulationsFragment extends Fragment {
     RecyclerView recycler_regulations;
     private Regulations_adapter adapter;
-    public static ArrayList<LawInfo3> lawinfos = new ArrayList<>();
+    public static ArrayList<LawInfo3> lawinfos3 = new ArrayList<>();
     Context context_regulations;
     private Realm realm;
     public static String lawContent3;
@@ -63,7 +63,7 @@ public class RegulationsFragment extends Fragment {
         }
 
         recycler_regulations = root.findViewById(R.id.recycler_regulations);
-        adapter = new Regulations_adapter(lawinfos, context_regulations);
+        adapter = new Regulations_adapter(lawinfos3, context_regulations);
         recycler_regulations.setLayoutManager(new LinearLayoutManager(context_regulations));
         recycler_regulations.setAdapter(adapter);
         return root;
@@ -72,16 +72,16 @@ public class RegulationsFragment extends Fragment {
 
     private void writeToRealmDatabase() {
         realm.beginTransaction();
-        for (int i = 0; i < lawinfos.size(); i++) {
+        for (int i = 0; i < lawinfos3.size(); i++) {
 
-           realm.copyToRealm(lawinfos.get(i));
+           realm.copyToRealm(lawinfos3.get(i));
         }
         realm.commitTransaction();
 
     }
 
     private void readFromRealmDatabase() {
-        lawinfos.clear();
+        lawinfos3.clear();
         RealmResults<LawInfo3> results = realm.where(LawInfo3.class).findAll();
 
         try {
@@ -98,7 +98,7 @@ public class RegulationsFragment extends Fragment {
                 String visibleStatusId = "1";
                 String registerDate = "";
                 String lawGroupRefId = "1";
-                lawinfos.add(new LawInfo3(lawId, lawTitle3, lawSummery3, lawContent3, lawSourceLink, lawTag3, shortKey, visibleStatusId, registerDate, lawGroupRefId));
+                lawinfos3.add(new LawInfo3(lawId, lawTitle3, lawSummery3, lawContent3, lawSourceLink, lawTag3, shortKey, visibleStatusId, registerDate, lawGroupRefId));
 
             }
             adapter.notifyDataSetChanged();
@@ -132,7 +132,7 @@ public class RegulationsFragment extends Fragment {
                         String registerDate = "";
                         String lawGroupRefId = "1";
 
-                        lawinfos.add(new LawInfo3(lawId, lawTitle3, lawSummery, lawContent3, lawSourceLink, lawTag3, shortKey, visibleStatusId, registerDate, lawGroupRefId));
+                        lawinfos3.add(new LawInfo3(lawId, lawTitle3, lawSummery, lawContent3, lawSourceLink, lawTag3, shortKey, visibleStatusId, registerDate, lawGroupRefId));
 
                     }
                     adapter.notifyDataSetChanged();

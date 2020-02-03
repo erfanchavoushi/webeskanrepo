@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-import com.azarnush.ptmalborz.LawContent2Fragment;
+import com.azarnush.ptmalborz.LawContent1Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo4;
 import java.util.List;
@@ -44,7 +44,7 @@ public class Question_and_answerAdapter extends
             @Override
             public void onClick(View view) {
 
-                Intent texts =new Intent(view.getContext() , LawContent2Fragment.class);
+                Intent texts =new Intent(view.getContext() , LawContent1Fragment.class);
                 switch (position){
                     case 0 : texts.putExtra("number_page" , "3.0");
                         view.getContext().startActivity(texts);

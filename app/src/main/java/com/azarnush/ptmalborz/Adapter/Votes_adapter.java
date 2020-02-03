@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.azarnush.ptmalborz.LawContent2Fragment;
+import com.azarnush.ptmalborz.LawContent1Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo5;
 
@@ -49,7 +49,7 @@ public class Votes_adapter extends RecyclerView.Adapter<Votes_adapter.Votes_View
             @Override
             public void onClick(View view) {
 
-                Intent texts = new Intent(view.getContext(), LawContent2Fragment.class);
+                Intent texts = new Intent(view.getContext(), LawContent1Fragment.class);
                 switch (position) {
                     case 0:
                         texts.putExtra("number_page", "4.0");

@@ -99,5 +99,11 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
                 .addToBackStack(null).commit();
 
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        HomeActivity.toolbar.setTitle("قوانین و مقررات");
+    }
 }
 

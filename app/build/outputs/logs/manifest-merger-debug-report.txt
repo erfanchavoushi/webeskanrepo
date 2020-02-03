@@ -135,7 +135,7 @@ activity#com.azarnush.ptmalborz.RegulationsFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-57
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-54
-activity#com.azarnush.ptmalborz.LawContent2Fragment
+activity#com.azarnush.ptmalborz.LawContent1Fragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:9-57
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:19-54

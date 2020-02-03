@@ -20,7 +20,7 @@
         <activity android:name=".Question_and_answerActivity" />
 
         <activity android:name=".RegulationsFragment" />
-        <activity android:name=".LawContent2Fragment" />
+        <activity android:name=".LawContent1Fragment" />
         <activity android:name=".Law_of_PossessionFragment" />
         <activity
             android:name=".SplashActivity"

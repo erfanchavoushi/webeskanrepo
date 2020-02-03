@@ -1,7 +1,6 @@
 package com.azarnush.ptmalborz.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +8,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.azarnush.ptmalborz.HomeActivity;
+import com.azarnush.ptmalborz.LawContent1Fragment;
 import com.azarnush.ptmalborz.LawContent2Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo2;
@@ -50,12 +49,12 @@ public class LawInfo2_adapter extends RecyclerView.Adapter<LawInfo2_adapter.LawI
 
                 switch (position) {
                     case 0:
-                        number_page = "1.0";
-                        fragment = new LawContent2Fragment();
+
+                        fragment = new LawContent1Fragment();
                         HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
                         break;
                     case 1:
-                        number_page = "2.0";
+
                         fragment = new LawContent2Fragment();
                         HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
                         break;

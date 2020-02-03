@@ -24,4 +24,9 @@ public class WebLogFragment extends Fragment {
         return root;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        HomeActivity.toolbar.setTitle("وبلاگ");
+    }
 }

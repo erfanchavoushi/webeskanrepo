@@ -54,7 +54,7 @@
 30        <activity android:name="com.azarnush.ptmalborz.RegulationsFragment" />
 30-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-57
 30-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-54
-31        <activity android:name="com.azarnush.ptmalborz.LawContent2Fragment" />
+31        <activity android:name="com.azarnush.ptmalborz.LawContent1Fragment" />
 31-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:9-57
 31-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:19-54
 32        <activity android:name="com.azarnush.ptmalborz.Law_of_PossessionFragment" />
