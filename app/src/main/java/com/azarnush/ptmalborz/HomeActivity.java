@@ -2,9 +2,7 @@ package com.azarnush.ptmalborz;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -16,13 +14,13 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.azarnush.ptmalborz.ui.home.HomeFragment;
+import com.azarnush.ptmalborz.ui.tools.AboutـusFragment;
 import com.google.android.material.navigation.NavigationView;
-
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -30,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
     DrawerLayout drawer;
     public static FragmentManager fragmentManager;
     public static Toolbar toolbar;
+
 
 
     @Override
@@ -46,7 +45,7 @@ public class HomeActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_all_laws, R.id.nav_weblog, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_contactUs, R.id.nav_share, R.id.nav_send)
+                R.id.nav_about_us, R.id.nav_contactUs, R.id.nav_share , R.id.nav_exit)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -71,10 +70,19 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.nav_weblog:
                         fragment = new WebLogFragment();
                         break;
+                    case R.id.nav_about_us:
+                        fragment = new AboutـusFragment();
+                        break;
+                    case R.id.nav_contactUs:
+                        fragment = new ContactUsFragment();
+                        break;
+                    case R.id.nav_exit:
+                        finish();
+                        break;
+
 
                 }
-                HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment)
-                        .addToBackStack(null).commit();
+              if(fragment!=null) HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
 
             }
         });

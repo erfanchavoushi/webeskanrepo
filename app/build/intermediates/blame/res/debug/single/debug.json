@@ -328,10 +328,6 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\aa259b8b9908498e79fc909bbc2b9ac7\\core-1.1.0\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_send.xml.flat",
-        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\fragment_send.xml"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
@@ -690,6 +686,10 @@
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_about_us.xml.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\fragment_about_us.xml"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -1080,10 +1080,6 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_contacts_black_24dp.xml.flat",
-        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable\\ic_contacts_black_24dp.xml"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
@@ -1114,6 +1110,10 @@
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_share.xml.flat",
         "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable-v21\\ic_menu_share.xml"
+    },
+    {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_perm_device_information_black_24dp.xml.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable\\ic_perm_device_information_black_24dp.xml"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -1412,10 +1412,6 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\anim\\btn_checkbox_to_checked_box_inner_merged_animation.xml"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_tools.xml.flat",
-        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\fragment_tools.xml"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_ripple_color.xml.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\f61c674e562d822ba4c906983bddd35d\\material-1.0.0\\res\\color\\mtrl_btn_ripple_color.xml"
     },
@@ -1698,6 +1694,10 @@
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_contact_us.xml.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\fragment_contact_us.xml"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
@@ -2242,6 +2242,10 @@
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_exit.xml.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\fragment_exit.xml"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",

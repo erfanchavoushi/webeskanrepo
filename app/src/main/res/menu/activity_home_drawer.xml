@@ -9,12 +9,12 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="صفحه اصلی" />
 
-            <item
-                android:title="قوانین و مقررات"
-                android:id="@+id/nav_all_laws"
-                android:icon="@drawable/law">
+        <item
+            android:id="@+id/nav_all_laws"
+            android:icon="@drawable/law"
+            android:title="قوانین و مقررات">
 
-            </item>
+        </item>
 
 
         <item
@@ -26,7 +26,7 @@
             android:icon="@drawable/ic_help_black_24dp"
             android:title="@string/menu_slideshow" />
         <item
-            android:id="@+id/nav_tools"
+            android:id="@+id/nav_about_us"
             android:icon="@drawable/ic_perm_device_information_black_24dp"
             android:title="درباره ما" />
         <item
@@ -35,16 +35,16 @@
             android:title="تماس با ما" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="برقرای ارتباط">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="@string/menu_share" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_exit"
                 android:icon="@drawable/ic_exit_to_app_black_24dp"
-                android:title="@string/menu_send" />
+                android:title="خروج" />
         </menu>
     </item>
 
