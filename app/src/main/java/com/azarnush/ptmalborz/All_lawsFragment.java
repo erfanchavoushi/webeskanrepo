@@ -86,12 +86,12 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
 //            case R.id.btn_question_and_answer:
 //                startActivity(new Intent(context, Question_and_answerActivity.class));
 //                break;
-//            case R.id.btn_votes:
-//                startActivity(new Intent(context, VotesActivity.class));
-//                break;
-//            case R.id.btn_Rules_webeskan:
-//                startActivity(new Intent(context, Rules_webeskanActivity.class));
-//                break;
+            case R.id.btn_votes:
+                fragment = new VotesFragment();
+                break;
+            case R.id.btn_Rules_webeskan:
+                fragment = new Rules_webeskanFragment();
+                break;
 
         }
 

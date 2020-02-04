@@ -1,11 +1,17 @@
 package com.azarnush.ptmalborz;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -25,7 +31,7 @@ import java.util.ArrayList;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class Rules_webeskanActivity extends AppCompatActivity {
+public class Rules_webeskanFragment extends Fragment {
     RecyclerView recycler_Rules_webeskan;
     private Rules_webeskan_adapter adapter;
     public static ArrayList<LawInfo6> lawinfos6 = new ArrayList<>();
@@ -36,11 +42,12 @@ public class Rules_webeskanActivity extends AppCompatActivity {
     public static String lawTag6;
     public static String lawSummery6;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rules_webeskan);
-        context_Rules_webeskan = getApplicationContext();
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_rules_webeskan, container, false);
+
+        context_Rules_webeskan = getContext();
 
         realm6 = Realm.getDefaultInstance();
         Integer chekeRealm = realm6.where(LawInfo6.class).findAll().size();
@@ -50,17 +57,19 @@ public class Rules_webeskanActivity extends AppCompatActivity {
             if (a.isConnected()) {
                 sendJsonArrayRequest_lawsInfos6();
             } else
-                Toast.makeText(this, "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
 
         } else {
             readFromRealmDatabase();
         }
 
-        recycler_Rules_webeskan = findViewById(R.id.recycler_Rules_webeskan);
+        recycler_Rules_webeskan = root.findViewById(R.id.recycler_Rules_webeskan);
         adapter = new Rules_webeskan_adapter(lawinfos6, context_Rules_webeskan);
         recycler_Rules_webeskan.setLayoutManager(new LinearLayoutManager(context_Rules_webeskan));
         recycler_Rules_webeskan.setAdapter(adapter);
+        return  root;
     }
+
 
     private void writeToRealmDatabase() {
         realm6.beginTransaction();
@@ -103,7 +112,7 @@ public class Rules_webeskanActivity extends AppCompatActivity {
     }
 
     public void sendJsonArrayRequest_lawsInfos6() {
-        RequestQueue queue = Volley.newRequestQueue(this);
+        RequestQueue queue = Volley.newRequestQueue(getContext());
         String url = "http://api.webeskan.com/api/v1/laws/get-laws-by-group-id/6";
 
         Response.Listener<JSONArray> listener = new Response.Listener<JSONArray>() {

@@ -119,11 +119,11 @@ activity#com.azarnush.ptmalborz.WebLogFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-61
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-49
-activity#com.azarnush.ptmalborz.Rules_webeskanActivity
+activity#com.azarnush.ptmalborz.Rules_webeskanFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-60
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-57
-activity#com.azarnush.ptmalborz.VotesActivity
+activity#com.azarnush.ptmalborz.VotesFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-51
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-48

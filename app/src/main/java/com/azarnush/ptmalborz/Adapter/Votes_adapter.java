@@ -10,9 +10,14 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.azarnush.ptmalborz.HomeActivity;
 import com.azarnush.ptmalborz.LawContent1Fragment;
+import com.azarnush.ptmalborz.LawContent2Fragment;
+import com.azarnush.ptmalborz.LawContent4Fragment;
+import com.azarnush.ptmalborz.LawContent5Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo5;
 
@@ -24,7 +29,7 @@ public class Votes_adapter extends RecyclerView.Adapter<Votes_adapter.Votes_View
 
     private List<LawInfo5> lawinfos5;
     private Context mContext;
-
+    Fragment fragment;
 
     public Votes_adapter(ArrayList<LawInfo5> lawinfos5, Context mContext) {
         this.lawinfos5 = lawinfos5;
@@ -49,15 +54,15 @@ public class Votes_adapter extends RecyclerView.Adapter<Votes_adapter.Votes_View
             @Override
             public void onClick(View view) {
 
-                Intent texts = new Intent(view.getContext(), LawContent1Fragment.class);
+
                 switch (position) {
                     case 0:
-                        texts.putExtra("number_page", "4.0");
-                        view.getContext().startActivity(texts);
+                        fragment = new LawContent4Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
                         break;
                     case 1:
-                        texts.putExtra("number_page", "4.1");
-                        view.getContext().startActivity(texts);
+                        fragment = new LawContent5Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
                         break;
 
                 }

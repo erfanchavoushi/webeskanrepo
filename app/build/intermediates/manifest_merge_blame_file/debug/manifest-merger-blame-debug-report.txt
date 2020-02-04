@@ -42,10 +42,10 @@
 26        <activity android:name="com.azarnush.ptmalborz.WebLogFragment" />
 26-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-61
 26-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-49
-27        <activity android:name="com.azarnush.ptmalborz.Rules_webeskanActivity" />
+27        <activity android:name="com.azarnush.ptmalborz.Rules_webeskanFragment" />
 27-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-60
 27-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-57
-28        <activity android:name="com.azarnush.ptmalborz.VotesActivity" />
+28        <activity android:name="com.azarnush.ptmalborz.VotesFragment" />
 28-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-51
 28-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-48
 29        <activity android:name="com.azarnush.ptmalborz.Question_and_answerActivity" />

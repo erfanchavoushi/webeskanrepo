@@ -653,16 +653,16 @@ public final class R {
         public static final int text2 = 0x7f08010e;
         public static final int textSpacerNoButtons = 0x7f08010f;
         public static final int textSpacerNoTitle = 0x7f080110;
-        public static final int time = 0x7f08011e;
-        public static final int title = 0x7f08011f;
-        public static final int titleDividerNoCustom = 0x7f080120;
-        public static final int title_template = 0x7f080121;
-        public static final int top = 0x7f080123;
-        public static final int topPanel = 0x7f080124;
-        public static final int up = 0x7f080137;
-        public static final int useLogo = 0x7f080138;
-        public static final int withText = 0x7f08013b;
-        public static final int wrap_content = 0x7f08013d;
+        public static final int time = 0x7f080128;
+        public static final int title = 0x7f080129;
+        public static final int titleDividerNoCustom = 0x7f08012a;
+        public static final int title_template = 0x7f08012b;
+        public static final int top = 0x7f08012d;
+        public static final int topPanel = 0x7f08012e;
+        public static final int up = 0x7f080141;
+        public static final int useLogo = 0x7f080142;
+        public static final int withText = 0x7f080145;
+        public static final int wrap_content = 0x7f080147;
     }
     public static final class integer {
         private integer() {}
@@ -742,8 +742,8 @@ public final class R {
         public static final int abc_shareactionprovider_share_with_application = 0x7f0f0019;
         public static final int abc_toolbar_collapse_description = 0x7f0f001a;
         public static final int app_name = 0x7f0f001d;
-        public static final int search_menu_title = 0x7f0f0038;
-        public static final int status_bar_notification_info_overflow = 0x7f0f0039;
+        public static final int search_menu_title = 0x7f0f0039;
+        public static final int status_bar_notification_info_overflow = 0x7f0f003a;
     }
     public static final class style {
         private style() {}

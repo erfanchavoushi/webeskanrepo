@@ -1,11 +1,16 @@
 package com.azarnush.ptmalborz;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -26,22 +31,22 @@ import java.util.ArrayList;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class VotesActivity extends AppCompatActivity {
+public class VotesFragment extends Fragment {
     RecyclerView Recycler_votes;
     private Votes_adapter adapter;
     public static ArrayList<LawInfo5> lawinfos5 = new ArrayList<>();
-    Context context_VotesActivity;
+
     private Realm realm5;
     public static String lawContent5;
     public static String lawTitle5;
     public static String lawTag5;
     public static String lawSummery5;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_votes);
-        context_VotesActivity = getApplicationContext();
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_votes, container, false);
+
 
         realm5 = Realm.getDefaultInstance();
         Integer chekeRealm = realm5.where(LawInfo5.class).findAll().size();
@@ -51,18 +56,23 @@ public class VotesActivity extends AppCompatActivity {
             if (a.isConnected()) {
                 sendJsonArrayRequest_lawsInfos5();
             } else
-                Toast.makeText(this, "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
 
         } else {
             readFromRealmDatabase();
 
         }
 
-        Recycler_votes = findViewById(R.id.recycler_votes);
-        adapter = new Votes_adapter(lawinfos5, context_VotesActivity);
-        Recycler_votes.setLayoutManager(new LinearLayoutManager(this));
+        Recycler_votes = root.findViewById(R.id.recycler_votes);
+        adapter = new Votes_adapter(lawinfos5, getContext());
+        Recycler_votes.setLayoutManager(new LinearLayoutManager(getContext()));
         Recycler_votes.setAdapter(adapter);
+
+
+        return root;
     }
+
+
 
     private void writeToRealmDatabase() {
         realm5.beginTransaction();
@@ -105,7 +115,7 @@ public class VotesActivity extends AppCompatActivity {
     }
 
     public void sendJsonArrayRequest_lawsInfos5() {
-        RequestQueue queue = Volley.newRequestQueue(this);
+        RequestQueue queue = Volley.newRequestQueue(getContext());
         String url = "http://api.webeskan.com/api/v1/laws/get-laws-by-group-id/4";
 
         Response.Listener<JSONArray> listener = new Response.Listener<JSONArray>() {
@@ -142,7 +152,7 @@ public class VotesActivity extends AppCompatActivity {
         Response.ErrorListener errorListener = new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(context_VotesActivity, error.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), error.getMessage(), Toast.LENGTH_LONG).show();
             }
         };
 

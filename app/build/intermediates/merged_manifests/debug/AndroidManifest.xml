@@ -24,8 +24,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.azarnush.ptmalborz.WebLogFragment" />
-        <activity android:name="com.azarnush.ptmalborz.Rules_webeskanActivity" />
-        <activity android:name="com.azarnush.ptmalborz.VotesActivity" />
+        <activity android:name="com.azarnush.ptmalborz.Rules_webeskanFragment" />
+        <activity android:name="com.azarnush.ptmalborz.VotesFragment" />
         <activity android:name="com.azarnush.ptmalborz.Question_and_answerActivity" />
         <activity android:name="com.azarnush.ptmalborz.RegulationsFragment" />
         <activity android:name="com.azarnush.ptmalborz.LawContent1Fragment" />

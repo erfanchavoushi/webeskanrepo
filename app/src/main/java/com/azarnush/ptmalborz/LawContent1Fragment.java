@@ -15,13 +15,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.azarnush.ptmalborz.models.LawInfo2;
-import com.azarnush.ptmalborz.models.LawInfo3;
 
 public class LawContent1Fragment extends Fragment {
     TextView txt_content;
     TextView txt_law_title;
     TextView txt_law_taq;
-    String number_page = "";
+
     String my_text = "";
     View root;
     Context context;
@@ -29,7 +28,7 @@ public class LawContent1Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        root = inflater.inflate(R.layout.fragment_law_content1, container, false);
+        root = inflater.inflate(R.layout.fragment_law_content, container, false);
         context = root.getContext();
 
         txt_content = root.findViewById(R.id.txt_content);
@@ -76,39 +75,6 @@ public class LawContent1Fragment extends Fragment {
 //                } else txt_law_taq.setText(lawInfo4444.getLawTag());
 //
 //                break;
-//            case "4.0":
-//                LawInfo5 lawInfo55 = VotesActivity.lawinfos5.get(0);
-//                txt_law_title.setText(lawInfo55.getLawTitle());
-//                txt_content.setText(Html.fromHtml(lawInfo55.getLawContent()));
-//                my_text = lawInfo55.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo55.getLawContent());
-//                if (lawInfo55.getLawTag().equalsIgnoreCase("null")){
-//                    txt_law_taq.setText("");
-//                } else txt_law_taq.setText(lawInfo55.getLawTag());
-//
-//                break;
-//            case "4.1":
-//                LawInfo5 lawInfo555 = VotesActivity.lawinfos5.get(1);
-//                txt_law_title.setText(lawInfo555.getLawTitle());
-//                txt_content.setText(Html.fromHtml(lawInfo555.getLawContent()));
-//                my_text = lawInfo555.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo555.getLawContent());
-//                if (lawInfo555.getLawTag().equalsIgnoreCase("null")) {
-//                    txt_law_taq.setText("");
-//                } else txt_law_taq.setText(lawInfo555.getLawTag());
-//
-//                break;
-//            case "5.0":
-//                LawInfo6 lawInfo6666 = Rules_webeskanActivity.lawinfos6.get(0);
-//                txt_law_title.setText(lawInfo6666.getLawTitle());
-//                txt_content.setText(Html.fromHtml(lawInfo6666.getLawContent()));
-//                my_text = lawInfo6666.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo6666.getLawContent());
-//                if (lawInfo6666.getLawTag().equalsIgnoreCase("null")) {
-//                    txt_law_taq.setText("");
-//                } else txt_law_taq.setText(lawInfo6666.getLawTag());
-//
-//                break;
-//        }
-
-
 
         return root;
 

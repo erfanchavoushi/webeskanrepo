@@ -15,8 +15,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity android:name=".WebLogFragment"></activity>
-        <activity android:name=".Rules_webeskanActivity" />
-        <activity android:name=".VotesActivity" />
+        <activity android:name=".Rules_webeskanFragment" />
+        <activity android:name=".VotesFragment" />
         <activity android:name=".Question_and_answerActivity" />
 
         <activity android:name=".RegulationsFragment" />
