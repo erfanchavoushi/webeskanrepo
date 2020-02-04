@@ -1537,7 +1537,6 @@ layout design_text_input_password_icon
 layout fragment_all_laws
 layout fragment_home
 layout fragment_law_content1
-layout fragment_law_content2
 layout fragment_law_info
 layout fragment_law_of__possession
 layout fragment_regulations
