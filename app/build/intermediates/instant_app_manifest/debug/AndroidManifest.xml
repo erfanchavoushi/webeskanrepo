@@ -30,7 +30,9 @@
         <activity android:name="com.azarnush.ptmalborz.Question_and_answerActivity" />
         <activity android:name="com.azarnush.ptmalborz.RegulationsFragment" />
         <activity android:name="com.azarnush.ptmalborz.LawContent1Fragment" />
-        <activity android:name="com.azarnush.ptmalborz.Law_of_PossessionFragment" />
+        <activity
+            android:name="com.azarnush.ptmalborz.Law_of_PossessionFragment"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.azarnush.ptmalborz.SplashActivity"
             android:noHistory="true"

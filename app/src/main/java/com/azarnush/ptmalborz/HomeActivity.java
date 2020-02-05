@@ -1,6 +1,7 @@
 package com.azarnush.ptmalborz;
 
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -37,6 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         toolbar = findViewById(R.id.toolbar);
         fragmentManager = getSupportFragmentManager();
+        toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
 
         drawer = findViewById(R.id.drawer_layout);
@@ -51,8 +53,6 @@ public class HomeActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
-
 
 
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {

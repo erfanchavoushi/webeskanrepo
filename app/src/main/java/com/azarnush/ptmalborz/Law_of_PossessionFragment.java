@@ -2,6 +2,7 @@ package com.azarnush.ptmalborz;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,15 +42,12 @@ public class Law_of_PossessionFragment extends Fragment {
     public static String lawSummery;
     Realm realm;
     View root;
-    Context context;
-
+    Context context = getActivity();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.fragment_law_of__possession, container, false);
-        context = root.getContext();
-
         realm = Realm.getDefaultInstance();
         Integer chekeRealm = realm.where(LawInfo2.class).findAll().size();
         All_lawsFragment a = new All_lawsFragment();
@@ -70,9 +68,9 @@ public class Law_of_PossessionFragment extends Fragment {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(context));
         recyclerView.setAdapter(adapter);
+        return root;
+    }
 
-         return root;
-}
 
         private void writeToRealmDatabase () {
             realm.beginTransaction();

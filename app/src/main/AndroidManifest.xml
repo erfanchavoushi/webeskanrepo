@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.azarnush.ptmalborz">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,14 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".WebLogFragment"></activity>
+        <activity android:name=".WebLogFragment" />
         <activity android:name=".Rules_webeskanFragment" />
         <activity android:name=".VotesFragment" />
         <activity android:name=".Question_and_answerActivity" />
-
         <activity android:name=".RegulationsFragment" />
         <activity android:name=".LawContent1Fragment" />
-        <activity android:name=".Law_of_PossessionFragment" />
+        <activity android:name=".Law_of_PossessionFragment"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:noHistory="true"

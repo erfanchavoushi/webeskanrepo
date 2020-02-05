@@ -11,141 +11,144 @@
 9-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:6:5-67
-11-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:6:22-64
+11-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:7:5-79
-12-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:7:22-76
+12-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:6:22-76
 13
 14    <application
-14-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:9:5-63:19
+14-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:8:5-62:19
 15        android:name="com.azarnush.ptmalborz.App.AppController"
-15-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:10:9-42
+15-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:9:9-42
 16        android:allowBackup="true"
-16-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:11:9-35
+16-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 17-->[androidx.core:core:1.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\aa259b8b9908498e79fc909bbc2b9ac7\core-1.1.0\AndroidManifest.xml:24:18-86
 18        android:debuggable="true"
 19        android:icon="@drawable/logo"
-19-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:12:9-38
+19-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:11:9-38
 20        android:label="@string/app_name"
 20-->[com.ornach.richtext:richtext:1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\5191ce4a2ea790931b608936603a1ac5\jetified-richtext-1.0\AndroidManifest.xml:12:9-41
 21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:13:9-54
+21-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:12:9-54
 22        android:supportsRtl="true"
-22-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:14:9-35
+22-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:13:9-35
 23        android:testOnly="true"
 24        android:theme="@style/AppTheme"
-24-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:15:9-40
+24-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:14:9-40
 25        android:usesCleartextTraffic="true" >
-25-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:16:9-44
+25-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:15:9-44
 26        <activity android:name="com.azarnush.ptmalborz.WebLogFragment" />
-26-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-61
-26-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-49
+26-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:16:9-52
+26-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:16:19-49
 27        <activity android:name="com.azarnush.ptmalborz.Rules_webeskanFragment" />
-27-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-60
-27-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-57
+27-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-60
+27-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-57
 28        <activity android:name="com.azarnush.ptmalborz.VotesFragment" />
-28-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-51
-28-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-48
+28-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-51
+28-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-48
 29        <activity android:name="com.azarnush.ptmalborz.Question_and_answerActivity" />
-29-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:9-65
-29-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:19-62
+29-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-65
+29-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-62
 30        <activity android:name="com.azarnush.ptmalborz.RegulationsFragment" />
-30-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-57
-30-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-54
+30-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:9-57
+30-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:20:19-54
 31        <activity android:name="com.azarnush.ptmalborz.LawContent1Fragment" />
-31-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:9-57
-31-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:19-54
-32        <activity android:name="com.azarnush.ptmalborz.Law_of_PossessionFragment" />
-32-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:9-63
-32-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:19-60
-33        <activity
-33-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:25:9-35:20
-34            android:name="com.azarnush.ptmalborz.SplashActivity"
-34-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:26:13-43
-35            android:noHistory="true"
-35-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:27:13-37
-36            android:screenOrientation="portrait"
-36-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:28:13-49
-37            android:theme="@style/AppTheme.NoActionBar" >
-37-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:29:13-56
-38            <intent-filter>
-38-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:30:13-34:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:31:17-69
-39-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:31:25-66
-40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:33:17-77
-41-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:33:27-74
-42            </intent-filter>
-43        </activity>
-44        <activity
-44-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:36:9-39:52
-45            android:name="com.azarnush.ptmalborz.LawInfoFragment"
-45-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:37:13-44
-46            android:label="لیست مطالب "
-46-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:38:13-40
-47            android:screenOrientation="portrait" />
-47-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:39:13-49
-48        <activity
-48-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:40:9-43:59
-49            android:name="com.azarnush.ptmalborz.HomeActivity"
-49-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:41:13-41
-50            android:screenOrientation="portrait"
-50-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:42:13-49
-51            android:theme="@style/AppTheme.NoActionBar" />
-51-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:43:13-56
-52        <activity
-52-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:44:9-46:52
-53            android:name="com.azarnush.ptmalborz.User_registrationActivity"
-53-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:45:13-54
-54            android:screenOrientation="portrait" />
-54-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:46:13-49
-55        <activity
-55-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:47:9-50:52
-56            android:name="com.azarnush.ptmalborz.MainActivity"
-56-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:48:13-41
-57            android:noHistory="true"
-57-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:49:13-37
-58            android:screenOrientation="portrait" />
-58-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:50:13-49
-59        <activity
-59-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:51:9-54:52
-60            android:name="com.azarnush.ptmalborz.Logonـtypeـselection"
-60-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:52:13-49
-61            android:noHistory="true"
-61-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:53:13-37
-62            android:screenOrientation="portrait" />
-62-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:54:13-49
-63        <activity
-63-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:55:9-58:52
-64            android:name="com.azarnush.ptmalborz.Get_number"
-64-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:56:13-39
-65            android:noHistory="true"
-65-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:57:13-37
-66            android:screenOrientation="portrait" />
-66-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:58:13-49
-67        <activity
-67-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:59:9-62:52
-68            android:name="com.azarnush.ptmalborz.Login_with_number"
-68-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:60:13-46
-69            android:noHistory="true"
-69-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:61:13-37
-70            android:screenOrientation="portrait" />
-70-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:62:13-49
-71
-72        <provider
-72-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-73            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-73-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-74            android:authorities="com.azarnush.ptmalborz.lifecycle-process"
-74-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-75            android:exported="false"
-75-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-76            android:multiprocess="true" />
-76-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-77    </application>
-78
-79</manifest>
+31-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:9-57
+31-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:21:19-54
+32        <activity
+32-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-23:59
+33            android:name="com.azarnush.ptmalborz.Law_of_PossessionFragment"
+33-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-60
+34            android:theme="@style/AppTheme.NoActionBar" />
+34-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:23:13-56
+35        <activity
+35-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:24:9-34:20
+36            android:name="com.azarnush.ptmalborz.SplashActivity"
+36-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:25:13-43
+37            android:noHistory="true"
+37-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:26:13-37
+38            android:screenOrientation="portrait"
+38-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:27:13-49
+39            android:theme="@style/AppTheme.NoActionBar" >
+39-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:28:13-56
+40            <intent-filter>
+40-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:29:13-33:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:30:17-69
+41-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:30:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:32:17-77
+43-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:32:27-74
+44            </intent-filter>
+45        </activity>
+46        <activity
+46-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:35:9-38:52
+47            android:name="com.azarnush.ptmalborz.LawInfoFragment"
+47-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:36:13-44
+48            android:label="لیست مطالب "
+48-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:37:13-40
+49            android:screenOrientation="portrait" />
+49-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:38:13-49
+50        <activity
+50-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:39:9-42:59
+51            android:name="com.azarnush.ptmalborz.HomeActivity"
+51-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:40:13-41
+52            android:screenOrientation="portrait"
+52-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:41:13-49
+53            android:theme="@style/AppTheme.NoActionBar" />
+53-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:42:13-56
+54        <activity
+54-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:43:9-45:52
+55            android:name="com.azarnush.ptmalborz.User_registrationActivity"
+55-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:44:13-54
+56            android:screenOrientation="portrait" />
+56-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:45:13-49
+57        <activity
+57-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:46:9-49:52
+58            android:name="com.azarnush.ptmalborz.MainActivity"
+58-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:47:13-41
+59            android:noHistory="true"
+59-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:48:13-37
+60            android:screenOrientation="portrait" />
+60-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:49:13-49
+61        <activity
+61-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:50:9-53:52
+62            android:name="com.azarnush.ptmalborz.Logonـtypeـselection"
+62-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:51:13-49
+63            android:noHistory="true"
+63-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:52:13-37
+64            android:screenOrientation="portrait" />
+64-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:53:13-49
+65        <activity
+65-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:54:9-57:52
+66            android:name="com.azarnush.ptmalborz.Get_number"
+66-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:55:13-39
+67            android:noHistory="true"
+67-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:56:13-37
+68            android:screenOrientation="portrait" />
+68-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:57:13-49
+69        <activity
+69-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:58:9-61:52
+70            android:name="com.azarnush.ptmalborz.Login_with_number"
+70-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:59:13-46
+71            android:noHistory="true"
+71-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:60:13-37
+72            android:screenOrientation="portrait" />
+72-->D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:61:13-49
+73
+74        <provider
+74-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+75            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+75-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+76            android:authorities="com.azarnush.ptmalborz.lifecycle-process"
+76-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+77            android:exported="false"
+77-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+78            android:multiprocess="true" />
+78-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\ptm\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+79    </application>
+80
+81</manifest>

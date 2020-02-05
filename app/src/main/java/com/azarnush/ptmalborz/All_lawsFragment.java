@@ -3,7 +3,6 @@ package com.azarnush.ptmalborz;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -78,7 +77,9 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
         Fragment fragment = null;
         switch (view.getId()) {
             case R.id.btn_LawOfPossession:
-                fragment = new Law_of_PossessionFragment();
+
+             fragment = new Law_of_PossessionFragment();
+
                 break;
             case R.id.btn_Regulations:
                 fragment = new RegulationsFragment();
@@ -88,7 +89,8 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
 //                break;
             case R.id.btn_votes:
                 fragment = new VotesFragment();
-                break;
+            break;
+
             case R.id.btn_Rules_webeskan:
                 fragment = new Rules_webeskanFragment();
                 break;
