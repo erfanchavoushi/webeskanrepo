@@ -1,8 +1,14 @@
 package com.azarnush.ptmalborz;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,6 +38,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +47,9 @@ public class HomeActivity extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
+
+
+
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -82,13 +92,12 @@ public class HomeActivity extends AppCompatActivity {
 
 
                 }
-              if(fragment!=null) HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
+              if(fragment!=null) HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
 
             }
         });
 
     }
-
 
     @Override
     public void onBackPressed() {
@@ -126,6 +135,7 @@ public class HomeActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 
 
 }

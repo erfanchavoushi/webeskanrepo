@@ -9,9 +9,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.azarnush.ptmalborz.models.LawInfo2;
@@ -20,8 +23,8 @@ public class LawContent1Fragment extends Fragment {
     TextView txt_content;
     TextView txt_law_title;
     TextView txt_law_taq;
-
     String my_text = "";
+  private ImageView imageShare;
     View root;
     Context context;
 
@@ -35,13 +38,31 @@ public class LawContent1Fragment extends Fragment {
         txt_law_title = root.findViewById(R.id.txt_law_title);
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
 
+        imageShare = getActivity().findViewById(R.id.img_share);
+        imageShare.setVisibility(View.VISIBLE);
+
+
         LawInfo2 lawInfo22 = Law_of_PossessionFragment.lawInfos2.get(0);
         txt_law_title.setText(lawInfo22.getLawTitle());
         txt_content.setText(Html.fromHtml(lawInfo22.getLawContent()));
-        my_text = lawInfo22.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo22.getLawContent());
+       my_text = lawInfo22.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo22.getLawContent());
         if (lawInfo22.getLawTag().equalsIgnoreCase("null")) {
             txt_law_taq.setText("");
         } else txt_law_taq.setText(lawInfo22.getLawTag());
+
+        imageShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_TEXT, my_text);
+                startActivity(Intent.createChooser(intent, "اشتراک گذاری متن با "));
+            }
+        });
+
+
+
+
 
 
 
@@ -80,30 +101,43 @@ public class LawContent1Fragment extends Fragment {
 
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        imageShare.setVisibility(View.INVISIBLE);
+    }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        imageShare.setVisibility(View.VISIBLE);
+    }
 
     //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        MenuInflater inflater=getActivity().getMenuInflater();
+//
 //        inflater.inflate(R.menu.home, menu);
 //        return true;
+//
+//    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch(item.getItemId())
+//        {
+//            case R.id.action_share:
+//                Intent intent = new Intent(Intent.ACTION_SEND);
+//                intent.setType("text/plain");
+//                intent.putExtra(Intent.EXTRA_TEXT, "my_text");
+//                startActivity(Intent.createChooser(intent, "اشتراک گذاری متن با "));
+//
+//                break;
+//
+//        }
+//        return true;
+//    }
 
- //   }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId())
-        {
-            case R.id.action_share:
-                Intent intent = new Intent(Intent.ACTION_SEND);
-                intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_TEXT, my_text);
-                startActivity(Intent.createChooser(intent, "اشتراک گذاری متن با "));
 
-                break;
-
-        }
-        return true;
-    }
 
 
 }

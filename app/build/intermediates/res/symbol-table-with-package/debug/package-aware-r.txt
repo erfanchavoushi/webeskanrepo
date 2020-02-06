@@ -1091,6 +1091,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable frist_page
 drawable fristpage
 drawable ic_call_black_24dp
 drawable ic_exit_to_app_black_24dp
@@ -1115,6 +1116,8 @@ drawable ic_share_black_24dp
 drawable ic_weblog
 drawable law
 drawable logo
+drawable logo20
+drawable logo_frist
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1193,7 +1196,6 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_share
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1285,8 +1287,10 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imageView7
 id img_lawGroup
 id img_lawpossession
+id img_share
 id info
 id invisible
 id italic
@@ -1417,6 +1421,7 @@ id textView13
 id textView14
 id textView15
 id textView16
+id textView17
 id textView2
 id textView3
 id textView4
@@ -1530,7 +1535,6 @@ layout activity_main
 layout activity_question_and_answer
 layout activity_splash
 layout activity_user_registration
-layout content_home
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1590,7 +1594,6 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout toolbar
 menu activity_home_drawer
-menu home
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round

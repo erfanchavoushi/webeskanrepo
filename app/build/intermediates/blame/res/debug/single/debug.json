@@ -656,10 +656,6 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\anim\\btn_radio_to_off_mtrl_ring_outer_animation.xml"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\menu_home.xml.flat",
-        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\menu\\home.xml"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
@@ -802,6 +798,10 @@
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo20.png.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable-v24\\logo20.png"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -1604,6 +1604,10 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\f61c674e562d822ba4c906983bddd35d\\material-1.0.0\\res\\layout\\design_navigation_item_header.xml"
     },
     {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_frist_page.jpg.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable-v24\\frist_page.jpg"
+    },
+    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
@@ -1880,6 +1884,10 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable\\btn_checkbox_checked_mtrl.xml"
     },
     {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo_frist.png.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable-v24\\logo_frist.png"
+    },
+    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
@@ -2056,16 +2064,16 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_toolbar.xml.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\toolbar.xml"
+    },
+    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\f61c674e562d822ba4c906983bddd35d\\material-1.0.0\\res\\drawable-mdpi-v4\\design_ic_visibility.png"
-    },
-    {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_toolbar.xml.flat",
-        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\toolbar.xml"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -2284,10 +2292,6 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_home.xml.flat",
-        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\content_home.xml"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_fab_transformation_sheet_expand_spec.xml.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\f61c674e562d822ba4c906983bddd35d\\material-1.0.0\\res\\animator\\mtrl_fab_transformation_sheet_expand_spec.xml"
     },
@@ -2312,12 +2316,12 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_law_of__possession.xml.flat",
         "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\layout\\fragment_law_of__possession.xml"
+    },
+    {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",

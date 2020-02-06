@@ -30,7 +30,7 @@ public class HomeFragment extends Fragment {
 
          View root = inflater.inflate(R.layout.fragment_home ,container, false);
          context_home = root.getContext();
-        HomeActivity.toolbar.setTitle("صفحه اصلی");
+
          btn_laws = root.findViewById(R.id.btn_laws);
         btn_weblog = root.findViewById(R.id.btn_weblog);
          btn_laws.setOnClickListener(new View.OnClickListener() {
@@ -55,10 +55,6 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        HomeActivity.toolbar.setTitle("صفحه اصلی");
-    }
+
     
 }
