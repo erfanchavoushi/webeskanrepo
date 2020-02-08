@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
@@ -55,6 +56,20 @@ public class HomeFragment extends Fragment {
         return root;
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
+        Toast.makeText(getActivity() , "on pause",  Toast.LENGTH_LONG);
+    }
 
+    @Override
+  public void onResume() {
+        super.onResume();
+        HomeActivity. imageShare.setVisibility(View.INVISIBLE);
+        Toast.makeText(getActivity() , "on resume",  Toast.LENGTH_LONG);
+        HomeActivity.toolbar.setTitle("صفحه اصلی");
+
+    }
     
 }

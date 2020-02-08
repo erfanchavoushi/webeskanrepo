@@ -20,7 +20,7 @@ public class LawContent6Fragment extends Fragment {
     TextView txt_content;
     TextView txt_law_title;
     TextView txt_law_taq;
-    private ImageView imageShare;
+
     String my_text = "";
     View root;
     Context context;
@@ -34,8 +34,8 @@ public class LawContent6Fragment extends Fragment {
         txt_content = root.findViewById(R.id.txt_content);
         txt_law_title = root.findViewById(R.id.txt_law_title);
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
-        imageShare = getActivity().findViewById(R.id.img_share);
-        imageShare.setVisibility(View.VISIBLE);
+
+        HomeActivity.imageShare.setVisibility(View.VISIBLE);
 
         LawInfo6 lawInfo6666 = Rules_webeskanFragment.lawinfos6.get(0);
         txt_law_title.setText(lawInfo6666.getLawTitle());
@@ -45,7 +45,7 @@ public class LawContent6Fragment extends Fragment {
             txt_law_taq.setText("");
         } else txt_law_taq.setText(lawInfo6666.getLawTag());
 
-        imageShare.setOnClickListener(new View.OnClickListener() {
+        HomeActivity.imageShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
@@ -62,13 +62,13 @@ public class LawContent6Fragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        imageShare.setVisibility(View.INVISIBLE);
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        imageShare.setVisibility(View.VISIBLE);
+       HomeActivity.imageShare.setVisibility(View.VISIBLE);
     }
 
 }

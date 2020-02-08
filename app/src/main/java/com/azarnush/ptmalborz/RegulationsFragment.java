@@ -51,7 +51,7 @@ public class RegulationsFragment extends Fragment {
         realm = Realm.getDefaultInstance();
         Integer chekeRealm = realm.where(LawInfo3.class).findAll().size();
         All_lawsFragment a = new All_lawsFragment();
-
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
         if (chekeRealm == 0) {
             if (a.isConnected()) {
                 sendJsonArrayRequest_lawsInfos3();

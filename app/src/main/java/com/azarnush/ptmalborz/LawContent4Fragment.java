@@ -19,7 +19,7 @@ public class LawContent4Fragment extends Fragment {
     TextView txt_content;
     TextView txt_law_title;
     TextView txt_law_taq;
-    private ImageView imageShare;
+
     String my_text = "";
 
     Context context;
@@ -35,8 +35,7 @@ public class LawContent4Fragment extends Fragment {
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
 
 
-        imageShare = getActivity().findViewById(R.id.img_share);
-        imageShare.setVisibility(View.VISIBLE);
+
         LawInfo5 lawInfo55 = VotesFragment.lawinfos5.get(0);
         txt_law_title.setText(lawInfo55.getLawTitle());
         txt_content.setText(Html.fromHtml(lawInfo55.getLawContent()));
@@ -44,7 +43,7 @@ public class LawContent4Fragment extends Fragment {
         if (lawInfo55.getLawTag().equalsIgnoreCase("null")){
             txt_law_taq.setText("");
         } else txt_law_taq.setText(lawInfo55.getLawTag());
-        imageShare.setOnClickListener(new View.OnClickListener() {
+        HomeActivity.imageShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
@@ -60,12 +59,12 @@ public class LawContent4Fragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        imageShare.setVisibility(View.INVISIBLE);
+       HomeActivity.imageShare.setVisibility(View.INVISIBLE);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        imageShare.setVisibility(View.VISIBLE);
+        HomeActivity.imageShare.setVisibility(View.VISIBLE);
     }
 }

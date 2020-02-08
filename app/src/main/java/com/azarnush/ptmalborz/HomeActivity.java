@@ -36,18 +36,18 @@ public class HomeActivity extends AppCompatActivity {
     public static FragmentManager fragmentManager;
     public static Toolbar toolbar;
 
-
+    public static ImageView imageShare;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        toolbar = findViewById(R.id.toolbar);
+        toolbar =findViewById(R.id.toolbar);
         fragmentManager = getSupportFragmentManager();
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
-
+        imageShare =findViewById(R.id.img_share);
 
 
 
@@ -136,6 +136,9 @@ public class HomeActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-
-
+    @Override
+    protected void onResume() {
+        super.onResume();
+        HomeActivity. imageShare.setVisibility(View.INVISIBLE);
+    }
 }

@@ -51,7 +51,7 @@ public class VotesFragment extends Fragment {
         realm5 = Realm.getDefaultInstance();
         Integer chekeRealm = realm5.where(LawInfo5.class).findAll().size();
         All_lawsFragment a = new All_lawsFragment();
-
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
         if (chekeRealm == 0) {
             if (a.isConnected()) {
                 sendJsonArrayRequest_lawsInfos5();

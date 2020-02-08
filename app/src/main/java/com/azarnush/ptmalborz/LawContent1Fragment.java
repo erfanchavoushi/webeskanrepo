@@ -24,7 +24,7 @@ public class LawContent1Fragment extends Fragment {
     TextView txt_law_title;
     TextView txt_law_taq;
     String my_text = "";
-  private ImageView imageShare;
+
     View root;
     Context context;
 
@@ -38,8 +38,8 @@ public class LawContent1Fragment extends Fragment {
         txt_law_title = root.findViewById(R.id.txt_law_title);
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
 
-        imageShare = getActivity().findViewById(R.id.img_share);
-        imageShare.setVisibility(View.VISIBLE);
+
+
 
 
         LawInfo2 lawInfo22 = Law_of_PossessionFragment.lawInfos2.get(0);
@@ -50,7 +50,7 @@ public class LawContent1Fragment extends Fragment {
             txt_law_taq.setText("");
         } else txt_law_taq.setText(lawInfo22.getLawTag());
 
-        imageShare.setOnClickListener(new View.OnClickListener() {
+        HomeActivity.imageShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
@@ -104,13 +104,13 @@ public class LawContent1Fragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        imageShare.setVisibility(View.INVISIBLE);
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        imageShare.setVisibility(View.VISIBLE);
+       HomeActivity.imageShare.setVisibility(View.VISIBLE);
     }
 
     //    @Override

@@ -41,7 +41,7 @@ public class LawInfoFragment extends Fragment {
         sendJsonArrayRequest_lawsInfos();
 
         context_lawinfo = getContext();
-
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
         recyclerViewinfo = root.findViewById(R.id.recycler_lawinfo);
         adapter = new LawInfo_adapter(lawInfos, context_lawinfo);
 

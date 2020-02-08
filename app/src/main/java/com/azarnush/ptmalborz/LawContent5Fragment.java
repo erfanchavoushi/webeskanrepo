@@ -21,7 +21,7 @@ public class LawContent5Fragment extends Fragment {
     TextView txt_content;
     TextView txt_law_title;
     TextView txt_law_taq;
-    private ImageView imageShare;
+
     String my_text = "";
     View root;
     Context context;
@@ -35,8 +35,6 @@ public class LawContent5Fragment extends Fragment {
         txt_content = root.findViewById(R.id.txt_content);
         txt_law_title = root.findViewById(R.id.txt_law_title);
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
-        imageShare = getActivity().findViewById(R.id.img_share);
-        imageShare.setVisibility(View.VISIBLE);
 
         LawInfo5 lawInfo555 = VotesFragment.lawinfos5.get(1);
         txt_law_title.setText(lawInfo555.getLawTitle());
@@ -46,7 +44,7 @@ public class LawContent5Fragment extends Fragment {
             txt_law_taq.setText("");
         } else txt_law_taq.setText(lawInfo555.getLawTag());
 
-        imageShare.setOnClickListener(new View.OnClickListener() {
+        HomeActivity.imageShare.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
@@ -61,12 +59,12 @@ public class LawContent5Fragment extends Fragment {
     @Override
     public void onPause() {
         super.onPause();
-        imageShare.setVisibility(View.INVISIBLE);
+      HomeActivity.imageShare.setVisibility(View.INVISIBLE);
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        imageShare.setVisibility(View.VISIBLE);
+        HomeActivity.imageShare.setVisibility(View.VISIBLE);
     }
 }

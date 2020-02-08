@@ -36,10 +36,6 @@
         "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fristpage.jpg.flat",
-        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable\\fristpage.jpg"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
@@ -48,16 +44,20 @@
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fristpage.jpg.flat",
+        "source": "D:\\project\\webeskanrepo\\app\\src\\main\\res\\drawable\\fristpage.jpg"
+    },
+    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\2867407301a8063548f7e4869755a767\\media-1.0.0\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\f61c674e562d822ba4c906983bddd35d\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
-    },
-    {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
         "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\c87e67e310a490e266440df970e2c13e\\appcompat-1.1.0\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
+        "source": "C:\\Users\\ptm\\.gradle\\caches\\transforms-2\\files-2.1\\f61c674e562d822ba4c906983bddd35d\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
         "merged": "D:\\project\\webeskanrepo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility_off.png.flat",

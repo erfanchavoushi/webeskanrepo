@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class All_lawsFragment extends Fragment implements View.OnClickListener {
@@ -106,6 +107,8 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
     public void onResume() {
         super.onResume();
         HomeActivity.toolbar.setTitle("قوانین و مقررات");
+       HomeActivity. imageShare.setVisibility(View.INVISIBLE);
+
     }
 }
 

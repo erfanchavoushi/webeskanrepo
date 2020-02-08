@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -40,7 +41,7 @@ public class Question_and_answerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_and_answer);
         context_Question_and_answer = getApplicationContext();
-
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
         realm4 = Realm.getDefaultInstance();
         Integer chekeRealm = realm4.where(LawInfo4.class).findAll().size();
         All_lawsFragment a = new All_lawsFragment();
