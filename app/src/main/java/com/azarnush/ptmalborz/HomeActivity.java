@@ -37,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
     public static Toolbar toolbar;
 
     public static ImageView imageShare;
+    View container;
 
 
     @Override
@@ -48,6 +49,7 @@ public class HomeActivity extends AppCompatActivity {
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
         imageShare =findViewById(R.id.img_share);
+        container =findViewById(R.id.nav_host_fragment);
 
 
 
@@ -99,32 +101,37 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+  // fragmentManager.getBackStackEntryCount() == 0
+
     @Override
     public void onBackPressed() {
-
+        android.app.Fragment currentFragment = getFragmentManager().findFragmentById(R.id.nav_host_fragment);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else if (fragmentManager.getBackStackEntryCount() == 0) {
+        } else if (fragmentManager.getBackStackEntryCount()==0) {
+            if(currentFragment instanceof ){
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
+                builder.setTitle(R.string.app_name);
+                builder.setIcon(R.drawable.logo);
+                builder.setMessage("آیا قصد خروج از برنامه را دارید؟")
+                        .setCancelable(false)
+                        .setPositiveButton("بله", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Toast.makeText(getApplicationContext(), "finish", Toast.LENGTH_LONG).show();
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("خیر", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
 
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
-            builder.setTitle(R.string.app_name);
-            builder.setIcon(R.drawable.logo);
-            builder.setMessage("آیا قصد خروج از برنامه را دارید؟")
-                    .setCancelable(false)
-                    .setPositiveButton("بله", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            Toast.makeText(getApplicationContext(), "finish", Toast.LENGTH_LONG).show();
-                            finish();
-                        }
-                    })
-                    .setNegativeButton("خیر", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            dialog.cancel();
-                        }
-                    });
-            AlertDialog alert = builder.create();
-            alert.show();
         } else super.onBackPressed();
     }
 

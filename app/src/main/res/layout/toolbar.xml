@@ -12,27 +12,31 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         app:popupTheme="@style/AppTheme.PopupOverlay"
-        app:title="@string/app_name">
+        app:title="@string/app_name"
+        android:layoutDirection="rtl">
 
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:gravity="left"
-           >
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            >
 
             <ImageView
                 android:id="@+id/img_share"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="10dp"
-
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
                 android:clickable="true"
+                android:foregroundGravity="center"
                 android:visibility="invisible"
                 app:srcCompat="@drawable/share" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
     </androidx.appcompat.widget.Toolbar>
@@ -43,6 +47,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="15dp"
         app:defaultNavHost="true"
         app:navGraph="@navigation/mobile_navigation" />
 

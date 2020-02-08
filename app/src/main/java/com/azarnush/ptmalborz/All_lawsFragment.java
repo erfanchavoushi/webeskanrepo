@@ -106,7 +106,7 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
-        HomeActivity.toolbar.setTitle("قوانین و مقررات");
+       HomeActivity.toolbar.setTitle("قوانین و مقررات");
        HomeActivity. imageShare.setVisibility(View.INVISIBLE);
 
     }

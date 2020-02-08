@@ -34,6 +34,7 @@ public class HomeFragment extends Fragment {
 
          btn_laws = root.findViewById(R.id.btn_laws);
         btn_weblog = root.findViewById(R.id.btn_weblog);
+
          btn_laws.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
@@ -68,7 +69,7 @@ public class HomeFragment extends Fragment {
         super.onResume();
         HomeActivity. imageShare.setVisibility(View.INVISIBLE);
         Toast.makeText(getActivity() , "on resume",  Toast.LENGTH_LONG);
-        HomeActivity.toolbar.setTitle("صفحه اصلی");
+       HomeActivity.toolbar.setTitle("صفحه اصلی");
 
     }
     
