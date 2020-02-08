@@ -1,17 +1,23 @@
 package com.azarnush.ptmalborz.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
-import com.azarnush.ptmalborz.LawContent1Fragment;
+
+import com.azarnush.ptmalborz.HomeActivity;
+import com.azarnush.ptmalborz.LawContent3Fragment;
+import com.azarnush.ptmalborz.LawContent7Fragment;
+import com.azarnush.ptmalborz.LawContent8Fragment;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo4;
+
 import java.util.List;
 
 public class Question_and_answerAdapter extends
@@ -44,16 +50,19 @@ public class Question_and_answerAdapter extends
             @Override
             public void onClick(View view) {
 
-                Intent texts =new Intent(view.getContext() , LawContent1Fragment.class);
                 switch (position){
-                    case 0 : texts.putExtra("number_page" , "3.0");
-                        view.getContext().startActivity(texts);
+                    case 0 :
+
+                        Fragment fragment = new LawContent3Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
                         break;
-                    case 1 : texts.putExtra("number_page" , "3.1");
-                        view.getContext().startActivity(texts);
+                    case 1:
+                        fragment = new LawContent7Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
                         break;
-                    case 2 : texts.putExtra("number_page" , "3.2");
-                        view.getContext().startActivity(texts);
+                    case 2:
+                        fragment = new LawContent8Fragment();
+                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
                         break;
                 }
             }

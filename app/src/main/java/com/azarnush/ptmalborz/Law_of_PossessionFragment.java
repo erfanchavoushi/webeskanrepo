@@ -1,18 +1,17 @@
 package com.azarnush.ptmalborz;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -113,7 +112,7 @@ public class Law_of_PossessionFragment extends Fragment {
         }
 
         public void sendJsonArrayRequest_lawsInfos2 () {
-            RequestQueue queue = Volley.newRequestQueue(context);
+            RequestQueue queue = Volley.newRequestQueue(getContext());
 
             String url = "http://api.webeskan.com/api/v1/laws/get-laws-by-group-id/2";
 

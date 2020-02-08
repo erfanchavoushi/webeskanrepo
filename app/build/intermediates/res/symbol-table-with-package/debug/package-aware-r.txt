@@ -1553,12 +1553,12 @@ layout design_text_input_password_icon
 layout fragment_about_us
 layout fragment_all_laws
 layout fragment_contact_us
-layout fragment_exit
 layout fragment_gallery
 layout fragment_home
 layout fragment_law_content
 layout fragment_law_info
 layout fragment_law_of__possession
+layout fragment_question_and_answer
 layout fragment_regulations
 layout fragment_rules_webeskan
 layout fragment_send
