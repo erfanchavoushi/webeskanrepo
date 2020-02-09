@@ -127,7 +127,7 @@ activity#com.azarnush.ptmalborz.VotesFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-51
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-48
-activity#com.azarnush.ptmalborz.Question_and_answerActivity
+activity#com.azarnush.ptmalborz.Question_and_answerFragment
 ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-65
 	android:name
 		ADDED from D:\project\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-62

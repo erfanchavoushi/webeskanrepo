@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -21,13 +22,14 @@ import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
 import com.azarnush.ptmalborz.ui.home.HomeFragment;
 import com.azarnush.ptmalborz.ui.tools.AboutـusFragment;
 import com.google.android.material.navigation.NavigationView;
+
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -35,7 +37,6 @@ public class HomeActivity extends AppCompatActivity {
     DrawerLayout drawer;
     public static FragmentManager fragmentManager;
     public static Toolbar toolbar;
-
     public static ImageView imageShare;
     View container;
 
@@ -44,13 +45,12 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        toolbar =findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         fragmentManager = getSupportFragmentManager();
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
-        imageShare =findViewById(R.id.img_share);
-        container =findViewById(R.id.nav_host_fragment);
-
+        imageShare = findViewById(R.id.img_share);
+        container = findViewById(R.id.nav_host_fragment);
 
 
         drawer = findViewById(R.id.drawer_layout);
@@ -59,7 +59,7 @@ public class HomeActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_all_laws, R.id.nav_weblog, R.id.nav_slideshow,
-                R.id.nav_about_us, R.id.nav_contactUs, R.id.nav_share , R.id.nav_exit)
+                R.id.nav_about_us, R.id.nav_contactUs, R.id.nav_share, R.id.nav_exit)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -72,13 +72,13 @@ public class HomeActivity extends AppCompatActivity {
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
                 Fragment fragment = null;
-                switch (destination.getId()){
+                switch (destination.getId()) {
                     case R.id.nav_home:
                         fragment = new HomeFragment();
-                       break;
+                        break;
                     case R.id.nav_all_laws:
-                       fragment = new All_lawsFragment();
-                       break;
+                        fragment = new All_lawsFragment();
+                        break;
                     case R.id.nav_weblog:
                         fragment = new WebLogFragment();
                         break;
@@ -94,42 +94,40 @@ public class HomeActivity extends AppCompatActivity {
 
 
                 }
-              if(fragment!=null) HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
-
+                if (fragment != null)
+                    HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
             }
         });
 
     }
 
-  // fragmentManager.getBackStackEntryCount() == 0
 
     @Override
     public void onBackPressed() {
-        android.app.Fragment currentFragment = getFragmentManager().findFragmentById(R.id.nav_host_fragment);
+
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else if (fragmentManager.getBackStackEntryCount()==0) {
-            if(currentFragment instanceof ){
+        } else if ( toolbar.getTitle()=="صفحه اصلی") {
+           // fragmentManager.getBackStackEntryCount() == 0 &
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
-                builder.setTitle(R.string.app_name);
-                builder.setIcon(R.drawable.logo);
-                builder.setMessage("آیا قصد خروج از برنامه را دارید؟")
-                        .setCancelable(false)
-                        .setPositiveButton("بله", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                Toast.makeText(getApplicationContext(), "finish", Toast.LENGTH_LONG).show();
-                                finish();
-                            }
-                        })
-                        .setNegativeButton("خیر", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                            }
-                        });
-                AlertDialog alert = builder.create();
-                alert.show();
-            }
+            AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
+            builder.setTitle(R.string.app_name);
+            builder.setIcon(R.drawable.logo);
+            builder.setMessage("آیا قصد خروج از برنامه را دارید؟")
+                    .setCancelable(false)
+                    .setPositiveButton("بله", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            Toast.makeText(getApplicationContext(), "finish", Toast.LENGTH_LONG).show();
+                            finish();
+                        }
+                    })
+                    .setNegativeButton("خیر", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
 
 
         } else super.onBackPressed();
@@ -146,6 +144,6 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        HomeActivity. imageShare.setVisibility(View.INVISIBLE);
+        HomeActivity.imageShare.setVisibility(View.INVISIBLE);
     }
 }

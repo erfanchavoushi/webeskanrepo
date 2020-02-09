@@ -1213,11 +1213,13 @@ id btn_LawOfPossession
 id btn_Loginـwithـnumber
 id btn_Regulations
 id btn_Rules_webeskan
+id btn_administrator_login
 id btn_laws
 id btn_login
 id btn_login_with_name
 id btn_question_and_answer
 id btn_registration
+id btn_residents_login
 id btn_votes
 id btn_weblog
 id buttonPanel
@@ -1532,7 +1534,6 @@ layout activity_home
 layout activity_login_with_number
 layout activity_logon_type_selection
 layout activity_main
-layout activity_question_and_answer
 layout activity_splash
 layout activity_user_registration
 layout custom_dialog
@@ -1559,6 +1560,7 @@ layout fragment_home
 layout fragment_law_content
 layout fragment_law_info
 layout fragment_law_of__possession
+layout fragment_question_and_answer
 layout fragment_regulations
 layout fragment_rules_webeskan
 layout fragment_send

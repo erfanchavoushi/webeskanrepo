@@ -17,7 +17,7 @@ import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.WebLogFragment;
 
 public class HomeFragment extends Fragment {
-   public static String Current_fragment;
+
 
     private HomeViewModel homeViewModel;
 

@@ -1,11 +1,16 @@
 package com.azarnush.ptmalborz;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -22,12 +27,10 @@ import io.realm.Realm;
 import io.realm.RealmResults;
 
 
-public class Question_and_answerActivity extends AppCompatActivity {
+public class Question_and_answerFragment extends Fragment {
     RecyclerView recycler_question;
     private Question_and_answerAdapter adapter;
     public static ArrayList<LawInfo4> lawinfos4 = new ArrayList<>();
-
-
 
     Context context_Question_and_answer;
     private Realm realm4;
@@ -36,11 +39,11 @@ public class Question_and_answerActivity extends AppCompatActivity {
     public static String lawTag4;
     public static String lawSummery4;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question_and_answer);
-        context_Question_and_answer = getApplicationContext();
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View root = inflater.inflate(R.layout.fragment_question_and_answer, container, false);
+        context_Question_and_answer = getContext();
         HomeActivity.imageShare.setVisibility(View.INVISIBLE);
         realm4 = Realm.getDefaultInstance();
         Integer chekeRealm = realm4.where(LawInfo4.class).findAll().size();
@@ -50,17 +53,20 @@ public class Question_and_answerActivity extends AppCompatActivity {
             if (a.isConnected()) {
                 sendJsonArrayRequest_lawsInfos4();
             } else
-                Toast.makeText(this, "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), "لطفا اینترنت را روشن و دوباره امتحان کنید.", Toast.LENGTH_LONG).show();
 
         } else {
             readFromRealmDatabase();
         }
 
-        recycler_question = findViewById(R.id.recycler_question);
-        adapter = new Question_and_answerAdapter(lawinfos4, getApplicationContext());
+        recycler_question = root.findViewById(R.id.recycler_question);
+        adapter = new Question_and_answerAdapter(lawinfos4, getContext());
         recycler_question.setLayoutManager(new LinearLayoutManager(context_Question_and_answer));
         recycler_question.setAdapter(adapter);
+
+        return root;
     }
+
 
     private void writeToRealmDatabase() {
         realm4.beginTransaction();
@@ -107,7 +113,7 @@ public class Question_and_answerActivity extends AppCompatActivity {
     }
 
     public void sendJsonArrayRequest_lawsInfos4() {
-        RequestQueue queue = Volley.newRequestQueue(this);
+        RequestQueue queue = Volley.newRequestQueue(getContext());
         String url = "http://api.webeskan.com/api/v1/laws/get-laws-by-group-id/1";
 
         Response.Listener<JSONArray> listener = new Response.Listener<JSONArray>() {

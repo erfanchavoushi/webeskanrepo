@@ -113,7 +113,7 @@ public class Law_of_PossessionFragment extends Fragment {
         }
 
         public void sendJsonArrayRequest_lawsInfos2 () {
-            RequestQueue queue = Volley.newRequestQueue(context);
+            RequestQueue queue = Volley.newRequestQueue(getContext());
 
             String url = "http://api.webeskan.com/api/v1/laws/get-laws-by-group-id/2";
 

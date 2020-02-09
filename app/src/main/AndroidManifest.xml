@@ -16,7 +16,7 @@
         <activity android:name=".WebLogFragment" />
         <activity android:name=".Rules_webeskanFragment" />
         <activity android:name=".VotesFragment" />
-        <activity android:name=".Question_and_answerActivity" />
+        <activity android:name=".Question_and_answerFragment" />
         <activity android:name=".RegulationsFragment" />
         <activity android:name=".LawContent1Fragment" />
         <activity android:name=".Law_of_PossessionFragment"

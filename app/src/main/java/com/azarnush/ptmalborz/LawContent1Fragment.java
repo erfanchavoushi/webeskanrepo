@@ -24,7 +24,6 @@ public class LawContent1Fragment extends Fragment {
     TextView txt_law_title;
     TextView txt_law_taq;
     String my_text = "";
-
     View root;
     Context context;
 
@@ -38,11 +37,7 @@ public class LawContent1Fragment extends Fragment {
         txt_law_title = root.findViewById(R.id.txt_law_title);
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
 
-
-
-
-
-        LawInfo2 lawInfo22 = Law_of_PossessionFragment.lawInfos2.get(0);
+      LawInfo2 lawInfo22 = Law_of_PossessionFragment.lawInfos2.get(0);
         txt_law_title.setText(lawInfo22.getLawTitle());
         txt_content.setText(Html.fromHtml(lawInfo22.getLawContent()));
        my_text = lawInfo22.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo22.getLawContent());
@@ -61,44 +56,7 @@ public class LawContent1Fragment extends Fragment {
         });
 
 
-
-
-
-
-
-//            case "3.0":
-//                LawInfo4 lawInfo44 = Question_and_answerActivity.lawinfos4.get(0);
-//                txt_law_title.setText(lawInfo44.getLawTitle());
-//                txt_content.setText(Html.fromHtml(lawInfo44.getLawContent()));
-//                my_text = lawInfo44.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo44.getLawContent());
-//                if (lawInfo44.getLawTag().equalsIgnoreCase("null")) {
-//                    txt_law_taq.setText("");
-//                } else txt_law_taq.setText(lawInfo44.getLawTag());
-//
-//                break;
-//            case "3.1":
-//                LawInfo4 lawInfo444 = Question_and_answerActivity.lawinfos4.get(1);
-//                txt_law_title.setText(lawInfo444.getLawTitle());
-//                txt_content.setText(Html.fromHtml(lawInfo444.getLawContent()));
-//                my_text = lawInfo444.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo444.getLawContent());
-//                if (lawInfo444.getLawTag().equalsIgnoreCase("null")){
-//                    txt_law_taq.setText("");
-//                } else txt_law_taq.setText(lawInfo444.getLawTag());
-//
-//                break;
-//            case "3.2":
-//                LawInfo4 lawInfo4444 = Question_and_answerActivity.lawinfos4.get(2);
-//                txt_law_title.setText(lawInfo4444.getLawTitle());
-//                txt_content.setText(Html.fromHtml(lawInfo4444.getLawContent()));
-//                my_text = lawInfo4444.getLawTitle() + " \n\n" + Html.fromHtml(lawInfo4444.getLawContent());
-//                if (lawInfo4444.getLawTag().equalsIgnoreCase("null")) {
-//                    txt_law_taq.setText("");
-//                } else txt_law_taq.setText(lawInfo4444.getLawTag());
-//
-//                break;
-
         return root;
-
     }
 
     @Override
