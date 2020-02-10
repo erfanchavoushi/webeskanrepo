@@ -36,6 +36,7 @@ public class LawContent2Fragment extends Fragment {
         txt_content = root.findViewById(R.id.txt_content);
         txt_law_title = root.findViewById(R.id.txt_law_title);
         txt_law_taq = root.findViewById(R.id.txt_law_taq);
+
         LawInfo3 lawInfo33 = RegulationsFragment.lawinfos3.get(0);
         txt_law_title.setText(lawInfo33.getLawTitle());
         txt_content.setText(Html.fromHtml(lawInfo33.getLawContent()));

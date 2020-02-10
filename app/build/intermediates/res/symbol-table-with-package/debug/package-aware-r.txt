@@ -1210,12 +1210,15 @@ id beginning
 id blocking
 id bottom
 id btn_LawOfPossession
+id btn_Log_in
 id btn_Loginـwithـnumber
 id btn_Regulations
+id btn_Residents_login
 id btn_Rules_webeskan
 id btn_laws
 id btn_login
 id btn_login_with_name
+id btn_managers_login
 id btn_question_and_answer
 id btn_registration
 id btn_votes
@@ -1254,9 +1257,14 @@ id direct
 id disableHome
 id drawer_layout
 id edit_query
+id edt_Password
+id edt_Repeat_Password
 id edt_family
+id edt_family_Residents
 id edt_name
+id edt_name_Residents
 id edt_number
+id edt_number_phone
 id end
 id end_padder
 id enterAlways
@@ -1532,7 +1540,6 @@ layout activity_home
 layout activity_login_with_number
 layout activity_logon_type_selection
 layout activity_main
-layout activity_question_and_answer
 layout activity_splash
 layout activity_user_registration
 layout custom_dialog
@@ -1560,6 +1567,7 @@ layout fragment_law_info
 layout fragment_law_of__possession
 layout fragment_question_and_answer
 layout fragment_regulations
+layout fragment_resident_information
 layout fragment_rules_webeskan
 layout fragment_send
 layout fragment_share
