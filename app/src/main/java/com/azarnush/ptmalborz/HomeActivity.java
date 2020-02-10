@@ -25,13 +25,11 @@ import androidx.navigation.ui.NavigationUI;
 import com.azarnush.ptmalborz.ui.home.HomeFragment;
 import com.azarnush.ptmalborz.ui.tools.AboutـusFragment;
 import com.google.android.material.navigation.NavigationView;
-<<<<<<< HEAD
-=======
 
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
->>>>>>> azarnush
+
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -112,31 +110,7 @@ public class HomeActivity extends AppCompatActivity {
 
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-<<<<<<< HEAD
-        } else if (fragmentManager.getBackStackEntryCount()==0) {
-           // if(currentFragment instanceof )
-            {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
-                builder.setTitle(R.string.app_name);
-                builder.setIcon(R.drawable.logo);
-                builder.setMessage("آیا قصد خروج از برنامه را دارید؟")
-                        .setCancelable(false)
-                        .setPositiveButton("بله", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                Toast.makeText(getApplicationContext(), "finish", Toast.LENGTH_LONG).show();
-                                finish();
-                            }
-                        })
-                        .setNegativeButton("خیر", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                dialog.cancel();
-                            }
-                        });
-                AlertDialog alert = builder.create();
-                alert.show();
-            }
-=======
         } else if ( toolbar.getTitle()=="صفحه اصلی") {
            // fragmentManager.getBackStackEntryCount() == 0 &
 
@@ -158,7 +132,6 @@ public class HomeActivity extends AppCompatActivity {
                     });
             AlertDialog alert = builder.create();
             alert.show();
->>>>>>> azarnush
 
 
         } else super.onBackPressed();

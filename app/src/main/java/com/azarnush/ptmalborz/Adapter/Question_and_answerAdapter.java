@@ -12,17 +12,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.azarnush.ptmalborz.HomeActivity;
-<<<<<<< HEAD
-import com.azarnush.ptmalborz.LawContent3Fragment;
-import com.azarnush.ptmalborz.LawContent7Fragment;
-import com.azarnush.ptmalborz.LawContent8Fragment;
-=======
+
 import com.azarnush.ptmalborz.LawContent1Fragment;
 import com.azarnush.ptmalborz.LawContent2Fragment;
 import com.azarnush.ptmalborz.LawContent3_1_Fragment;
 import com.azarnush.ptmalborz.LawContent3_2_Fragment;
 import com.azarnush.ptmalborz.LawContent3_3_Fragment;
->>>>>>> azarnush
+
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.models.LawInfo4;
 
@@ -57,22 +53,7 @@ public class Question_and_answerAdapter extends
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-<<<<<<< HEAD
 
-                switch (position){
-                    case 0 :
-
-                        Fragment fragment = new LawContent3Fragment();
-                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
-                        break;
-                    case 1:
-                        fragment = new LawContent7Fragment();
-                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
-                        break;
-                    case 2:
-                        fragment = new LawContent8Fragment();
-                        HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
-=======
 Fragment fragment;
                 switch (position){
                     case 0 :
@@ -89,7 +70,7 @@ Fragment fragment;
 
                        fragment = new LawContent3_3_Fragment();
                       HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).commit();
->>>>>>> azarnush
+
                         break;
                 }
             }
