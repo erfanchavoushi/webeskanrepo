@@ -91,6 +91,9 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.nav_exit:
                         finish();
                         break;
+                    case R.id.nav_slideshow:
+                        fragment = new Question_and_answerFragment();
+                        break;
 
 
                 }

@@ -7,7 +7,7 @@
     android:background="@drawable/frist_page">
 
     <ru.katso.livebutton.LiveButton
-        android:id="@+id/btn_administrator_login"
+        android:id="@+id/btn_Residents_login"
         style="@style/Button_style_text"
         android:layout_width="120dp"
         android:layout_height="60dp"
@@ -25,7 +25,7 @@
         livebutton:shadowColor="#18443E" />
 
     <ru.katso.livebutton.LiveButton
-        android:id="@+id/btn_residents_login"
+        android:id="@+id/btn_managers_login"
         style="@style/Button_style_text"
         android:layout_width="120dp"
         android:layout_height="60dp"
