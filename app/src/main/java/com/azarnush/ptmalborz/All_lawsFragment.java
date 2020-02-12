@@ -30,6 +30,7 @@ public class All_lawsFragment extends Fragment implements View.OnClickListener {
         findViews();
         HomeActivity.toolbar.setTitle("قوانین و مقررات");
 
+
         btn_LawOfPossession.setOnClickListener(this);
         btn_Regulations.setOnClickListener(this);
         btn_question_and_answer.setOnClickListener(this);

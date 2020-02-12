@@ -1215,6 +1215,7 @@ id btn_Loginـwithـnumber
 id btn_Regulations
 id btn_Residents_login
 id btn_Rules_webeskan
+id btn_incoming_resident
 id btn_laws
 id btn_login
 id btn_login_with_name
@@ -1359,10 +1360,12 @@ id recycler_law_of_possession
 id recycler_lawinfo
 id recycler_question
 id recycler_regulations
+id recycler_units
 id recycler_votes
 id right
 id right_icon
 id right_side
+id rlt_root
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1430,7 +1433,9 @@ id textView14
 id textView15
 id textView16
 id textView17
+id textView18
 id textView2
+id textView20
 id textView3
 id textView4
 id textView5
@@ -1462,6 +1467,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id txt_Counter
 id txt_Register
+id txt_building_number
 id txt_content
 id txt_law_taq
 id txt_law_title
@@ -1469,6 +1475,7 @@ id txt_lawcontent
 id txt_lawsummary
 id txt_title
 id txt_tittle
+id txt_unit_number
 id unchecked
 id uniform
 id unlabeled
@@ -1576,6 +1583,7 @@ layout fragment_slideshow
 layout fragment_tools
 layout fragment_votes
 layout fragment_web_log
+layout fragmentstationary_unit_info
 layout lawgroup_list_row
 layout lawinfo_list_row
 layout mtrl_layout_snackbar
@@ -1600,6 +1608,7 @@ layout reguration_list_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout stationary_list_row
 layout support_simple_spinner_dropdown_item
 layout toolbar
 menu activity_home_drawer
