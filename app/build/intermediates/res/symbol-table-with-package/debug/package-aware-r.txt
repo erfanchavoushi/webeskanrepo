@@ -1218,6 +1218,7 @@ id btn_login
 id btn_login_with_name
 id btn_managers_login
 id btn_question_and_answer
+id btn_register
 id btn_registration
 id btn_votes
 id btn_weblog
@@ -1276,6 +1277,7 @@ id fill_vertical
 id filled
 id fixed
 id forever
+id forgot_pass
 id ghost_view
 id gif
 id gone
@@ -1345,6 +1347,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id password
 id percent
 id phone
 id pin
@@ -1478,6 +1481,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id view_offset_helper
 id visible
 id withText
@@ -1574,6 +1578,7 @@ layout fragment_question_and_answer
 layout fragment_regulations
 layout fragment_resident_information
 layout fragment_rules_webeskan
+layout fragment_saken_login
 layout fragment_send
 layout fragment_share
 layout fragment_slideshow

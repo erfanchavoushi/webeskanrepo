@@ -137,6 +137,7 @@ public final class R {
         public static final int chronometer = 0x7f08005e;
         public static final int dialog_button = 0x7f080072;
         public static final int forever = 0x7f08008c;
+<<<<<<< HEAD
         public static final int icon = 0x7f080094;
         public static final int icon_group = 0x7f080095;
         public static final int info = 0x7f0800a2;
@@ -150,6 +151,21 @@ public final class R {
         public static final int notification_main_column_container = 0x7f0800c9;
         public static final int right_icon = 0x7f0800e1;
         public static final int right_side = 0x7f0800e2;
+=======
+        public static final int icon = 0x7f080095;
+        public static final int icon_group = 0x7f080096;
+        public static final int info = 0x7f0800a3;
+        public static final int italic = 0x7f0800a5;
+        public static final int item_touch_helper_previous_elevation = 0x7f0800a6;
+        public static final int line1 = 0x7f0800aa;
+        public static final int line3 = 0x7f0800ab;
+        public static final int normal = 0x7f0800c7;
+        public static final int notification_background = 0x7f0800c8;
+        public static final int notification_main_column = 0x7f0800c9;
+        public static final int notification_main_column_container = 0x7f0800ca;
+        public static final int right_icon = 0x7f0800e2;
+        public static final int right_side = 0x7f0800e3;
+>>>>>>> master
         public static final int tag_accessibility_actions = 0x7f080111;
         public static final int tag_accessibility_clickable_spans = 0x7f080112;
         public static final int tag_accessibility_heading = 0x7f080113;
@@ -160,8 +176,13 @@ public final class R {
         public static final int tag_unhandled_key_listeners = 0x7f080118;
         public static final int text = 0x7f080119;
         public static final int text2 = 0x7f08011a;
+<<<<<<< HEAD
         public static final int time = 0x7f08013a;
         public static final int title = 0x7f08013b;
+=======
+        public static final int time = 0x7f080138;
+        public static final int title = 0x7f080139;
+>>>>>>> master
     }
     public static final class integer {
         private integer() {}

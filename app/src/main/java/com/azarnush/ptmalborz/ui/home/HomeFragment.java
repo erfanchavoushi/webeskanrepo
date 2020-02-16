@@ -15,6 +15,7 @@ import com.azarnush.ptmalborz.All_lawsFragment;
 import com.azarnush.ptmalborz.HomeActivity;
 import com.azarnush.ptmalborz.R;
 import com.azarnush.ptmalborz.Resident_informationFragment;
+import com.azarnush.ptmalborz.Saken_Login_Fragment;
 import com.azarnush.ptmalborz.WebLogFragment;
 
 public class HomeFragment extends Fragment {
@@ -61,7 +62,7 @@ public class HomeFragment extends Fragment {
         btn_residents_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new Resident_informationFragment();
+                Fragment fragment = new Saken_Login_Fragment();
                 HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
             }
         });

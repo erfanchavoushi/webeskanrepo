@@ -595,6 +595,7 @@ public final class R {
         public static final int end_padder = 0x7f080081;
         public static final int expand_activities_button = 0x7f080085;
         public static final int expanded_menu = 0x7f080086;
+<<<<<<< HEAD
         public static final int home = 0x7f080092;
         public static final int homeAsUp = 0x7f080093;
         public static final int icon = 0x7f080094;
@@ -621,6 +622,34 @@ public final class R {
         public static final int radio = 0x7f0800d8;
         public static final int right_icon = 0x7f0800e1;
         public static final int right_side = 0x7f0800e2;
+=======
+        public static final int home = 0x7f080093;
+        public static final int homeAsUp = 0x7f080094;
+        public static final int icon = 0x7f080095;
+        public static final int icon_group = 0x7f080096;
+        public static final int ifRoom = 0x7f080097;
+        public static final int image = 0x7f080098;
+        public static final int info = 0x7f0800a3;
+        public static final int line1 = 0x7f0800aa;
+        public static final int line3 = 0x7f0800ab;
+        public static final int listMode = 0x7f0800ac;
+        public static final int list_item = 0x7f0800ad;
+        public static final int media_actions = 0x7f0800b0;
+        public static final int middle = 0x7f0800b2;
+        public static final int multiply = 0x7f0800b7;
+        public static final int never = 0x7f0800c5;
+        public static final int none = 0x7f0800c6;
+        public static final int normal = 0x7f0800c7;
+        public static final int notification_background = 0x7f0800c8;
+        public static final int notification_main_column = 0x7f0800c9;
+        public static final int notification_main_column_container = 0x7f0800ca;
+        public static final int parentPanel = 0x7f0800d1;
+        public static final int progress_circular = 0x7f0800d8;
+        public static final int progress_horizontal = 0x7f0800d9;
+        public static final int radio = 0x7f0800da;
+        public static final int right_icon = 0x7f0800e2;
+        public static final int right_side = 0x7f0800e3;
+>>>>>>> master
         public static final int screen = 0x7f0800e7;
         public static final int scrollIndicatorDown = 0x7f0800e9;
         public static final int scrollIndicatorUp = 0x7f0800ea;
@@ -653,6 +682,7 @@ public final class R {
         public static final int text2 = 0x7f08011a;
         public static final int textSpacerNoButtons = 0x7f08011b;
         public static final int textSpacerNoTitle = 0x7f08011c;
+<<<<<<< HEAD
         public static final int time = 0x7f08013a;
         public static final int title = 0x7f08013b;
         public static final int titleDividerNoCustom = 0x7f08013c;
@@ -663,6 +693,18 @@ public final class R {
         public static final int useLogo = 0x7f080156;
         public static final int withText = 0x7f080159;
         public static final int wrap_content = 0x7f08015b;
+=======
+        public static final int time = 0x7f080138;
+        public static final int title = 0x7f080139;
+        public static final int titleDividerNoCustom = 0x7f08013a;
+        public static final int title_template = 0x7f08013b;
+        public static final int top = 0x7f08013d;
+        public static final int topPanel = 0x7f08013e;
+        public static final int up = 0x7f080151;
+        public static final int useLogo = 0x7f080152;
+        public static final int withText = 0x7f080156;
+        public static final int wrap_content = 0x7f080158;
+>>>>>>> master
     }
     public static final class integer {
         private integer() {}
@@ -719,7 +761,11 @@ public final class R {
         public static final int select_dialog_item_material = 0x7f0b005b;
         public static final int select_dialog_multichoice_material = 0x7f0b005c;
         public static final int select_dialog_singlechoice_material = 0x7f0b005d;
+<<<<<<< HEAD
         public static final int support_simple_spinner_dropdown_item = 0x7f0b005f;
+=======
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b005e;
+>>>>>>> master
     }
     public static final class string {
         private string() {}

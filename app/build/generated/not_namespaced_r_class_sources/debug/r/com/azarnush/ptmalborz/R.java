@@ -5603,12 +5603,21 @@ public final class R {
     public static final int btn_Regulations=0x7f08004a;
     public static final int btn_Residents_login=0x7f08004b;
     public static final int btn_Rules_webeskan=0x7f08004c;
+<<<<<<< HEAD
     public static final int btn_incoming_resident=0x7f08004d;
     public static final int btn_laws=0x7f08004e;
     public static final int btn_login=0x7f08004f;
     public static final int btn_login_with_name=0x7f080050;
     public static final int btn_managers_login=0x7f080051;
     public static final int btn_question_and_answer=0x7f080052;
+=======
+    public static final int btn_laws=0x7f08004d;
+    public static final int btn_login=0x7f08004e;
+    public static final int btn_login_with_name=0x7f08004f;
+    public static final int btn_managers_login=0x7f080050;
+    public static final int btn_question_and_answer=0x7f080051;
+    public static final int btn_register=0x7f080052;
+>>>>>>> master
     public static final int btn_registration=0x7f080053;
     public static final int btn_votes=0x7f080054;
     public static final int btn_weblog=0x7f080055;
@@ -5667,6 +5676,7 @@ public final class R {
     public static final int filled=0x7f08008a;
     public static final int fixed=0x7f08008b;
     public static final int forever=0x7f08008c;
+<<<<<<< HEAD
     public static final int ghost_view=0x7f08008d;
     public static final int gif=0x7f08008e;
     public static final int gone=0x7f08008f;
@@ -5754,6 +5764,95 @@ public final class R {
     public static final int right_icon=0x7f0800e1;
     public static final int right_side=0x7f0800e2;
     public static final int rlt_root=0x7f0800e3;
+=======
+    public static final int forgot_pass=0x7f08008d;
+    public static final int ghost_view=0x7f08008e;
+    public static final int gif=0x7f08008f;
+    public static final int gone=0x7f080090;
+    public static final int group_divider=0x7f080091;
+    public static final int groups=0x7f080092;
+    public static final int home=0x7f080093;
+    public static final int homeAsUp=0x7f080094;
+    public static final int icon=0x7f080095;
+    public static final int icon_group=0x7f080096;
+    public static final int ifRoom=0x7f080097;
+    public static final int image=0x7f080098;
+    public static final int imageView=0x7f080099;
+    public static final int imageView2=0x7f08009a;
+    public static final int imageView3=0x7f08009b;
+    public static final int imageView4=0x7f08009c;
+    public static final int imageView5=0x7f08009d;
+    public static final int imageView6=0x7f08009e;
+    public static final int imageView7=0x7f08009f;
+    public static final int img_lawGroup=0x7f0800a0;
+    public static final int img_lawpossession=0x7f0800a1;
+    public static final int img_share=0x7f0800a2;
+    public static final int info=0x7f0800a3;
+    public static final int invisible=0x7f0800a4;
+    public static final int italic=0x7f0800a5;
+    public static final int item_touch_helper_previous_elevation=0x7f0800a6;
+    public static final int labeled=0x7f0800a7;
+    public static final int largeLabel=0x7f0800a8;
+    public static final int left=0x7f0800a9;
+    public static final int line1=0x7f0800aa;
+    public static final int line3=0x7f0800ab;
+    public static final int listMode=0x7f0800ac;
+    public static final int list_item=0x7f0800ad;
+    public static final int login=0x7f0800ae;
+    public static final int masked=0x7f0800af;
+    public static final int media_actions=0x7f0800b0;
+    public static final int message=0x7f0800b1;
+    public static final int middle=0x7f0800b2;
+    public static final int mini=0x7f0800b3;
+    public static final int mobile_navigation=0x7f0800b4;
+    public static final int mtrl_child_content_container=0x7f0800b5;
+    public static final int mtrl_internal_children_alpha_tag=0x7f0800b6;
+    public static final int multiply=0x7f0800b7;
+    public static final int nav_about_us=0x7f0800b8;
+    public static final int nav_all_laws=0x7f0800b9;
+    public static final int nav_contactUs=0x7f0800ba;
+    public static final int nav_controller_view_tag=0x7f0800bb;
+    public static final int nav_exit=0x7f0800bc;
+    public static final int nav_home=0x7f0800bd;
+    public static final int nav_host_fragment=0x7f0800be;
+    public static final int nav_law_of_possession=0x7f0800bf;
+    public static final int nav_share=0x7f0800c0;
+    public static final int nav_slideshow=0x7f0800c1;
+    public static final int nav_view=0x7f0800c2;
+    public static final int nav_weblog=0x7f0800c3;
+    public static final int navigation_header_container=0x7f0800c4;
+    public static final int never=0x7f0800c5;
+    public static final int none=0x7f0800c6;
+    public static final int normal=0x7f0800c7;
+    public static final int notification_background=0x7f0800c8;
+    public static final int notification_main_column=0x7f0800c9;
+    public static final int notification_main_column_container=0x7f0800ca;
+    public static final int off=0x7f0800cb;
+    public static final int on=0x7f0800cc;
+    public static final int outline=0x7f0800cd;
+    public static final int packed=0x7f0800ce;
+    public static final int parallax=0x7f0800cf;
+    public static final int parent=0x7f0800d0;
+    public static final int parentPanel=0x7f0800d1;
+    public static final int parent_matrix=0x7f0800d2;
+    public static final int password=0x7f0800d3;
+    public static final int percent=0x7f0800d4;
+    public static final int phone=0x7f0800d5;
+    public static final int pin=0x7f0800d6;
+    public static final int pinGroup=0x7f0800d7;
+    public static final int progress_circular=0x7f0800d8;
+    public static final int progress_horizontal=0x7f0800d9;
+    public static final int radio=0x7f0800da;
+    public static final int recycler_Rules_webeskan=0x7f0800db;
+    public static final int recycler_law_of_possession=0x7f0800dc;
+    public static final int recycler_lawinfo=0x7f0800dd;
+    public static final int recycler_question=0x7f0800de;
+    public static final int recycler_regulations=0x7f0800df;
+    public static final int recycler_votes=0x7f0800e0;
+    public static final int right=0x7f0800e1;
+    public static final int right_icon=0x7f0800e2;
+    public static final int right_side=0x7f0800e3;
+>>>>>>> master
     public static final int save_image_matrix=0x7f0800e4;
     public static final int save_non_transition_alpha=0x7f0800e5;
     public static final int save_scale_type=0x7f0800e6;
@@ -5821,6 +5920,7 @@ public final class R {
     public static final int textView15=0x7f080124;
     public static final int textView16=0x7f080125;
     public static final int textView17=0x7f080126;
+<<<<<<< HEAD
     public static final int textView18=0x7f080127;
     public static final int textView2=0x7f080128;
     public static final int textView20=0x7f080129;
@@ -5875,6 +5975,59 @@ public final class R {
     public static final int wrap=0x7f08015a;
     public static final int wrap_content=0x7f08015b;
     public static final int wv_weblog=0x7f08015c;
+=======
+    public static final int textView2=0x7f080127;
+    public static final int textView3=0x7f080128;
+    public static final int textView4=0x7f080129;
+    public static final int textView5=0x7f08012a;
+    public static final int textView6=0x7f08012b;
+    public static final int textView7=0x7f08012c;
+    public static final int textView8=0x7f08012d;
+    public static final int textView9=0x7f08012e;
+    public static final int text_gallery=0x7f08012f;
+    public static final int text_input_password_toggle=0x7f080130;
+    public static final int text_send=0x7f080131;
+    public static final int text_share=0x7f080132;
+    public static final int text_slideshow=0x7f080133;
+    public static final int text_tools=0x7f080134;
+    public static final int textinput_counter=0x7f080135;
+    public static final int textinput_error=0x7f080136;
+    public static final int textinput_helper_text=0x7f080137;
+    public static final int time=0x7f080138;
+    public static final int title=0x7f080139;
+    public static final int titleDividerNoCustom=0x7f08013a;
+    public static final int title_template=0x7f08013b;
+    public static final int toolbar=0x7f08013c;
+    public static final int top=0x7f08013d;
+    public static final int topPanel=0x7f08013e;
+    public static final int touch_outside=0x7f08013f;
+    public static final int transition_current_scene=0x7f080140;
+    public static final int transition_layout_save=0x7f080141;
+    public static final int transition_position=0x7f080142;
+    public static final int transition_scene_layoutid_cache=0x7f080143;
+    public static final int transition_transform=0x7f080144;
+    public static final int txt_Counter=0x7f080145;
+    public static final int txt_Register=0x7f080146;
+    public static final int txt_content=0x7f080147;
+    public static final int txt_law_taq=0x7f080148;
+    public static final int txt_law_title=0x7f080149;
+    public static final int txt_lawcontent=0x7f08014a;
+    public static final int txt_lawsummary=0x7f08014b;
+    public static final int txt_title=0x7f08014c;
+    public static final int txt_tittle=0x7f08014d;
+    public static final int unchecked=0x7f08014e;
+    public static final int uniform=0x7f08014f;
+    public static final int unlabeled=0x7f080150;
+    public static final int up=0x7f080151;
+    public static final int useLogo=0x7f080152;
+    public static final int username=0x7f080153;
+    public static final int view_offset_helper=0x7f080154;
+    public static final int visible=0x7f080155;
+    public static final int withText=0x7f080156;
+    public static final int wrap=0x7f080157;
+    public static final int wrap_content=0x7f080158;
+    public static final int wv_weblog=0x7f080159;
+>>>>>>> master
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -5971,6 +6124,7 @@ public final class R {
     public static final int fragment_regulations=0x7f0b003c;
     public static final int fragment_resident_information=0x7f0b003d;
     public static final int fragment_rules_webeskan=0x7f0b003e;
+<<<<<<< HEAD
     public static final int fragment_send=0x7f0b003f;
     public static final int fragment_share=0x7f0b0040;
     public static final int fragment_slideshow=0x7f0b0041;
@@ -5978,6 +6132,15 @@ public final class R {
     public static final int fragment_votes=0x7f0b0043;
     public static final int fragment_web_log=0x7f0b0044;
     public static final int fragmentstationary_unit_info=0x7f0b0045;
+=======
+    public static final int fragment_saken_login=0x7f0b003f;
+    public static final int fragment_send=0x7f0b0040;
+    public static final int fragment_share=0x7f0b0041;
+    public static final int fragment_slideshow=0x7f0b0042;
+    public static final int fragment_tools=0x7f0b0043;
+    public static final int fragment_votes=0x7f0b0044;
+    public static final int fragment_web_log=0x7f0b0045;
+>>>>>>> master
     public static final int lawgroup_list_row=0x7f0b0046;
     public static final int lawinfo_list_row=0x7f0b0047;
     public static final int mtrl_layout_snackbar=0x7f0b0048;
@@ -6002,9 +6165,14 @@ public final class R {
     public static final int select_dialog_item_material=0x7f0b005b;
     public static final int select_dialog_multichoice_material=0x7f0b005c;
     public static final int select_dialog_singlechoice_material=0x7f0b005d;
+<<<<<<< HEAD
     public static final int stationary_list_row=0x7f0b005e;
     public static final int support_simple_spinner_dropdown_item=0x7f0b005f;
     public static final int toolbar=0x7f0b0060;
+=======
+    public static final int support_simple_spinner_dropdown_item=0x7f0b005e;
+    public static final int toolbar=0x7f0b005f;
+>>>>>>> master
   }
   public static final class menu {
     public static final int activity_home_drawer=0x7f0c0000;
