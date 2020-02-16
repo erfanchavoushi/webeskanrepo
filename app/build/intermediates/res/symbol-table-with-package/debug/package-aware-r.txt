@@ -1091,8 +1091,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable frist_page
-drawable fristpage
 drawable ic_call_black_24dp
 drawable ic_exit_to_app_black_24dp
 drawable ic_group_black_24dp
@@ -1116,7 +1114,6 @@ drawable ic_share_black_24dp
 drawable ic_weblog
 drawable law
 drawable logo
-drawable logo20
 drawable logo_frist
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1612,9 +1609,11 @@ layout stationary_list_row
 layout support_simple_spinner_dropdown_item
 layout toolbar
 menu activity_home_drawer
+mipmap frist_page
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+mipmap logo20
 navigation mobile_navigation
 string abc_action_bar_home_description
 string abc_action_bar_up_description

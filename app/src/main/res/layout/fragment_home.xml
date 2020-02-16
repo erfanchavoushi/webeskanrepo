@@ -4,7 +4,7 @@
     xmlns:livebutton="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/frist_page">
+    android:background="@mipmap/frist_page">
 
     <ru.katso.livebutton.LiveButton
         android:id="@+id/btn_Residents_login"
@@ -83,7 +83,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:foregroundGravity="top"
-        livebutton:srcCompat="@drawable/logo20" />
+        livebutton:srcCompat="@mipmap/logo20" />
 
     <TextView
         android:id="@+id/textView17"
