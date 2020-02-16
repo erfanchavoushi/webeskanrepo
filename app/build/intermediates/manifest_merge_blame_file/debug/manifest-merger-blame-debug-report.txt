@@ -34,121 +34,120 @@
 21-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:12:9-54
 22        android:supportsRtl="true"
 22-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:13:9-35
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme"
-24-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:14:9-40
-25        android:usesCleartextTraffic="true" >
-25-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:15:9-44
-26        <activity android:name="com.azarnush.ptmalborz.WebLogFragment" />
-26-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:16:9-52
-26-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:16:19-49
-27        <activity android:name="com.azarnush.ptmalborz.Rules_webeskanFragment" />
-27-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-60
-27-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-57
-28        <activity android:name="com.azarnush.ptmalborz.VotesFragment" />
-28-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-51
-28-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-48
-29        <activity android:name="com.azarnush.ptmalborz.Question_and_answerFragment" />
-29-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-65
-29-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-62
-30        <activity android:name="com.azarnush.ptmalborz.RegulationsFragment" />
-30-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:20:9-57
-30-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:20:19-54
-31        <activity android:name="com.azarnush.ptmalborz.LawContent1Fragment" />
-31-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:21:9-57
-31-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:21:19-54
-32        <activity
-32-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-23:59
-33            android:name="com.azarnush.ptmalborz.Law_of_PossessionFragment"
-33-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-60
-34            android:theme="@style/AppTheme.NoActionBar" />
-34-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:23:13-56
-35        <activity
-35-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:24:9-34:20
-36            android:name="com.azarnush.ptmalborz.SplashActivity"
-36-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:25:13-43
-37            android:noHistory="true"
-37-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:26:13-37
-38            android:screenOrientation="portrait"
-38-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:27:13-49
-39            android:theme="@style/AppTheme.NoActionBar" >
-39-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:28:13-56
-40            <intent-filter>
-40-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:29:13-33:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:30:17-69
-41-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:30:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:32:17-77
-43-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:32:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity
-46-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:35:9-38:52
-47            android:name="com.azarnush.ptmalborz.LawInfoFragment"
-47-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:36:13-44
-48            android:label="لیست مطالب "
-48-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:37:13-40
-49            android:screenOrientation="portrait" />
-49-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:38:13-49
-50        <activity
-50-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:39:9-42:59
-51            android:name="com.azarnush.ptmalborz.HomeActivity"
-51-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:40:13-41
-52            android:screenOrientation="portrait"
-52-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:41:13-49
-53            android:theme="@style/AppTheme.NoActionBar" />
-53-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:42:13-56
-54        <activity
-54-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:43:9-45:52
-55            android:name="com.azarnush.ptmalborz.User_registrationActivity"
-55-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:44:13-54
-56            android:screenOrientation="portrait" />
-56-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:45:13-49
-57        <activity
-57-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:46:9-49:52
-58            android:name="com.azarnush.ptmalborz.MainActivity"
-58-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:47:13-41
-59            android:noHistory="true"
-59-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:48:13-37
-60            android:screenOrientation="portrait" />
-60-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:49:13-49
-61        <activity
-61-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:50:9-53:52
-62            android:name="com.azarnush.ptmalborz.Logonـtypeـselection"
-62-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:51:13-49
-63            android:noHistory="true"
-63-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:52:13-37
-64            android:screenOrientation="portrait" />
-64-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:53:13-49
-65        <activity
-65-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:54:9-57:52
-66            android:name="com.azarnush.ptmalborz.Get_number"
-66-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:55:13-39
-67            android:noHistory="true"
-67-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:56:13-37
-68            android:screenOrientation="portrait" />
-68-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:57:13-49
-69        <activity
-69-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:58:9-61:52
-70            android:name="com.azarnush.ptmalborz.Login_with_number"
-70-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:59:13-46
-71            android:noHistory="true"
-71-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:60:13-37
-72            android:screenOrientation="portrait" />
-72-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:61:13-49
-73
-74        <provider
-74-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
-75            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-75-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
-76            android:authorities="com.azarnush.ptmalborz.lifecycle-process"
-76-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
-77            android:exported="false"
-77-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
-78            android:multiprocess="true" />
-78-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
-79    </application>
-80
-81</manifest>
+23        android:theme="@style/AppTheme"
+23-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:14:9-40
+24        android:usesCleartextTraffic="true" >
+24-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:15:9-44
+25        <activity android:name="com.azarnush.ptmalborz.WebLogFragment" />
+25-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:16:9-52
+25-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:16:19-49
+26        <activity android:name="com.azarnush.ptmalborz.Rules_webeskanFragment" />
+26-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:17:9-60
+26-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:17:19-57
+27        <activity android:name="com.azarnush.ptmalborz.VotesFragment" />
+27-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:18:9-51
+27-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:18:19-48
+28        <activity android:name="com.azarnush.ptmalborz.Question_and_answerFragment" />
+28-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:19:9-65
+28-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:19:19-62
+29        <activity android:name="com.azarnush.ptmalborz.RegulationsFragment" />
+29-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:20:9-57
+29-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:20:19-54
+30        <activity android:name="com.azarnush.ptmalborz.LawContent1Fragment" />
+30-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:21:9-57
+30-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:21:19-54
+31        <activity
+31-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:22:9-23:59
+32            android:name="com.azarnush.ptmalborz.Law_of_PossessionFragment"
+32-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:22:19-60
+33            android:theme="@style/AppTheme.NoActionBar" />
+33-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:23:13-56
+34        <activity
+34-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:24:9-34:20
+35            android:name="com.azarnush.ptmalborz.SplashActivity"
+35-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:25:13-43
+36            android:noHistory="true"
+36-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:26:13-37
+37            android:screenOrientation="portrait"
+37-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:27:13-49
+38            android:theme="@style/AppTheme.NoActionBar" >
+38-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:28:13-56
+39            <intent-filter>
+39-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:29:13-33:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:30:17-69
+40-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:30:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:32:17-77
+42-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:32:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:35:9-38:52
+46            android:name="com.azarnush.ptmalborz.LawInfoFragment"
+46-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:36:13-44
+47            android:label="لیست مطالب "
+47-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:37:13-40
+48            android:screenOrientation="portrait" />
+48-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:38:13-49
+49        <activity
+49-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:39:9-42:59
+50            android:name="com.azarnush.ptmalborz.HomeActivity"
+50-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:40:13-41
+51            android:screenOrientation="portrait"
+51-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:41:13-49
+52            android:theme="@style/AppTheme.NoActionBar" />
+52-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:42:13-56
+53        <activity
+53-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:43:9-45:52
+54            android:name="com.azarnush.ptmalborz.User_registrationActivity"
+54-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:44:13-54
+55            android:screenOrientation="portrait" />
+55-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:45:13-49
+56        <activity
+56-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:46:9-49:52
+57            android:name="com.azarnush.ptmalborz.MainActivity"
+57-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:47:13-41
+58            android:noHistory="true"
+58-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:48:13-37
+59            android:screenOrientation="portrait" />
+59-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:49:13-49
+60        <activity
+60-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:50:9-53:52
+61            android:name="com.azarnush.ptmalborz.Logonـtypeـselection"
+61-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:51:13-49
+62            android:noHistory="true"
+62-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:52:13-37
+63            android:screenOrientation="portrait" />
+63-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:53:13-49
+64        <activity
+64-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:54:9-57:52
+65            android:name="com.azarnush.ptmalborz.Get_number"
+65-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:55:13-39
+66            android:noHistory="true"
+66-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:56:13-37
+67            android:screenOrientation="portrait" />
+67-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:57:13-49
+68        <activity
+68-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:58:9-61:52
+69            android:name="com.azarnush.ptmalborz.Login_with_number"
+69-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:59:13-46
+70            android:noHistory="true"
+70-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:60:13-37
+71            android:screenOrientation="portrait" />
+71-->C:\Users\Ptmclient\AndroidStudioProjects\webeskanrepo\app\src\main\AndroidManifest.xml:61:13-49
+72
+73        <provider
+73-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+74            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+75            android:authorities="com.azarnush.ptmalborz.lifecycle-process"
+75-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+76            android:exported="false"
+76-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+77            android:multiprocess="true" />
+77-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Ptmclient\.gradle\caches\transforms-2\files-2.1\3681b9d99ea315fe4647068aeee43235\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+78    </application>
+79
+80</manifest>
