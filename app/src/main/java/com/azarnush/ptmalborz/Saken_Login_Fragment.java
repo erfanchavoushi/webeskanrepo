@@ -32,7 +32,7 @@ public class Saken_Login_Fragment extends Fragment {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new Resident_informationFragment();
+                Fragment fragment = new Get_number_residentFragment();
                 HomeActivity.fragmentManager.beginTransaction().replace(R.id.nav_host_fragment, fragment).addToBackStack(null).commit();
             }
         });
@@ -40,6 +40,7 @@ public class Saken_Login_Fragment extends Fragment {
 
         return root;
     }
+
 
     @Override
     public void onResume() {

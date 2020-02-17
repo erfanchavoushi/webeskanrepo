@@ -50,12 +50,12 @@ public class Login_with_number extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(btn_login_with_number.getText() == "تایید"){
+                if (btn_login_with_number.getText() == "تایید" || btn_login_with_number.getText() == "ارسال مجدد کد") {
 
                     String user_cod = (String) pinGroup.getText();
                     if (register_cod.equalsIgnoreCase(user_cod)) {
                         if (counter != 0) {
-                           Get_number.isRegister  ="true";
+                            Get_number_manager.isRegister = "true";
                            Intent i = new Intent(getApplicationContext(), HomeActivity.class);
 
                            startActivity(i);
@@ -93,6 +93,7 @@ public class Login_with_number extends AppCompatActivity {
                     btn_login_with_number.setText("ارسال مجدد کد");
 
 
+
                 }
             }
 
@@ -106,7 +107,7 @@ public class Login_with_number extends AppCompatActivity {
     //Get  again the registration code
     public void sendJsonObjectRequest_codRegister() {
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url = Get_number.url_Foundation + "generate-user-code/" + Get_number.mobile_number;
+        String url = Get_number_manager.url_Foundation + "generate-user-code/" + Get_number_manager.mobile_number;
 
         Response.Listener<JSONObject> listener = new Response.Listener<JSONObject>() {
             @Override

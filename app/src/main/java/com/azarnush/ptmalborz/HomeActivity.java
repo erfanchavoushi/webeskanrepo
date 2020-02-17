@@ -112,8 +112,8 @@ public class HomeActivity extends AppCompatActivity {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
 
-        } else if ( toolbar.getTitle()=="صفحه اصلی") {
-           // fragmentManager.getBackStackEntryCount() == 0 &
+        } else if (toolbar.getTitle() == "صفحه اصلی") {
+            // fragmentManager.getBackStackEntryCount() == 0 &
 
             AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
             builder.setTitle(R.string.app_name);
@@ -131,12 +131,9 @@ public class HomeActivity extends AppCompatActivity {
                             dialog.cancel();
                         }
                     });
+            builder.setPositiveButtonIcon(getResources().getDrawable(R.drawable.yes_icon))
+                    .setNegativeButtonIcon(getResources().getDrawable(R.drawable.no_icon));
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                builder.setPositiveButtonIcon(getDrawable(R.drawable.yes_icon))
-                        .setNegativeButtonIcon(getDrawable(R.drawable.no_icon));
-
-            }
             AlertDialog alert = builder.create();
             alert.show();
 

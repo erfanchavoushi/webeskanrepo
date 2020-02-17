@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        if (Get_number.isRegister =="true") {
-            Toast.makeText(this ,Get_number.isRegister ,Toast.LENGTH_LONG).show();
+        if (Get_number_manager.isRegister == "true") {
+            Toast.makeText(this, Get_number_manager.isRegister, Toast.LENGTH_LONG).show();
             startActivity(new Intent(this,HomeActivity.class));
             finish();
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Get_number"
+    tools:context=".Get_number_manager"
     android:background="@drawable/back1">
 
     <androidx.cardview.widget.CardView
@@ -42,7 +42,7 @@
                 android:text="ورود"
                 style="@style/Button_style_text"
                 app:backgroundColor="#2D9385"
-                app:corners="10dp"
+                app:corners="50dp"
                 app:normalHeight="6dp"
                 app:pressedHeight="2dp"
                 app:shadowColor="#18443E" />

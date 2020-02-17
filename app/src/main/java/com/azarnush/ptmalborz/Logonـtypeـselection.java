@@ -22,7 +22,7 @@ public class Logonـtypeـselection extends AppCompatActivity {
         btn_Loginـwithـnumber.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               startActivity(new Intent(Logonـtypeـselection.this ,Get_number.class));
+                startActivity(new Intent(Logonـtypeـselection.this, Get_number_manager.class));
             }
         });
 

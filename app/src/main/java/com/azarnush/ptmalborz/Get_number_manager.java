@@ -18,7 +18,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Get_number extends AppCompatActivity {
+public class Get_number_manager extends AppCompatActivity {
     EditText phone;
     Button btn_login;
     Integer number_number = 11;
@@ -41,7 +41,6 @@ public class Get_number extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), User_registrationActivity.class);
-
                 startActivity(i);
             }
         });
@@ -60,7 +59,7 @@ public class Get_number extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "تعداد ارقام کافی نیست", Toast.LENGTH_LONG).show();
                 } else if (!mobile_number.matches("(\\+98|0)?9\\d{9}")) {
 
-                    Toast.makeText(Get_number.this, "شماره موبایل نامعتبر هست", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Get_number_manager.this, "شماره موبایل نامعتبر هست", Toast.LENGTH_SHORT).show();
                 } else {
 
                     sendJsonObjectRequest2();

@@ -75,7 +75,8 @@ public class HomeFragment extends Fragment {
     public void onPause() {
         super.onPause();
         HomeActivity.imageShare.setVisibility(View.INVISIBLE);
-        Toast.makeText(getActivity() , "on pause",  Toast.LENGTH_LONG);
+        //Toast.makeText(getActivity() , "on pause",  Toast.LENGTH_LONG);
+
     }
 
     @Override

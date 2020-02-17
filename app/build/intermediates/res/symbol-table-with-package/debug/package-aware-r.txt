@@ -1212,7 +1212,6 @@ id beginning
 id blocking
 id bottom
 id btn_LawOfPossession
-id btn_Log_in
 id btn_Loginـwithـnumber
 id btn_Regulations
 id btn_Residents_login
@@ -1568,6 +1567,7 @@ layout fragment_all_laws
 layout fragment_contact_us
 layout fragment_exit
 layout fragment_gallery
+layout fragment_get_number_resident
 layout fragment_home
 layout fragment_law_content
 layout fragment_law_info

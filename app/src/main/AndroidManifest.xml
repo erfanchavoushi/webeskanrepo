@@ -52,7 +52,7 @@
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Get_number"
+            android:name=".Get_number_manager"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity

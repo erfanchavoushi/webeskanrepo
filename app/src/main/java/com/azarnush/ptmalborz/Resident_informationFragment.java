@@ -17,7 +17,7 @@ public class Resident_informationFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_resident_information, container, false);
-        HomeActivity.toolbar.setTitle("ثبت نام / ورود ");
+        HomeActivity.toolbar.setTitle("ثبت نام");
 
         return root;
 
@@ -26,6 +26,6 @@ public class Resident_informationFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        HomeActivity.toolbar.setTitle("ثبت نام / ورود ");
+        HomeActivity.toolbar.setTitle("ثبت نام");
     }
 }

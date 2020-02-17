@@ -124,8 +124,8 @@
 64-->D:\project\webeskanrepo_new26\webeskanrepo\app\src\main\AndroidManifest.xml:53:13-49
 65        <activity
 65-->D:\project\webeskanrepo_new26\webeskanrepo\app\src\main\AndroidManifest.xml:54:9-57:52
-66            android:name="com.azarnush.ptmalborz.Get_number"
-66-->D:\project\webeskanrepo_new26\webeskanrepo\app\src\main\AndroidManifest.xml:55:13-39
+66            android:name="com.azarnush.ptmalborz.Get_number_manager"
+66-->D:\project\webeskanrepo_new26\webeskanrepo\app\src\main\AndroidManifest.xml:55:13-47
 67            android:noHistory="true"
 67-->D:\project\webeskanrepo_new26\webeskanrepo\app\src\main\AndroidManifest.xml:56:13-37
 68            android:screenOrientation="portrait" />
