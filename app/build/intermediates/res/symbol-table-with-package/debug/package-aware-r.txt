@@ -1121,6 +1121,7 @@ drawable logo_frist
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable no_icon
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1138,6 +1139,7 @@ drawable side_nav_bar
 drawable splash
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable yes_icon
 id ALT
 id Arrival
 id Building_managers

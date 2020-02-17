@@ -2,6 +2,7 @@ package com.azarnush.ptmalborz;
 
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -119,17 +120,23 @@ public class HomeActivity extends AppCompatActivity {
             builder.setIcon(R.drawable.logo);
             builder.setMessage("آیا قصد خروج از برنامه را دارید؟")
                     .setCancelable(false)
-                    .setPositiveButton("بله", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
-                            Toast.makeText(getApplicationContext(), "finish", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(getApplicationContext(), "finish", Toast.LENGTH_LONG).show();
                             finish();
                         }
                     })
-                    .setNegativeButton("خیر", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             dialog.cancel();
                         }
                     });
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                builder.setPositiveButtonIcon(getDrawable(R.drawable.yes_icon))
+                        .setNegativeButtonIcon(getDrawable(R.drawable.no_icon));
+
+            }
             AlertDialog alert = builder.create();
             alert.show();
 

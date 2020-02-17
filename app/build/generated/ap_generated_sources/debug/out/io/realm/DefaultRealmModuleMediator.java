@@ -29,9 +29,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         Set<Class<? extends RealmModel>> modelClasses = new HashSet<Class<? extends RealmModel>>(5);
         modelClasses.add(com.azarnush.ptmalborz.models.LawInfo2.class);
         modelClasses.add(com.azarnush.ptmalborz.models.LawInfo3.class);
+        modelClasses.add(com.azarnush.ptmalborz.models.LawInfo6.class);
         modelClasses.add(com.azarnush.ptmalborz.models.LawInfo4.class);
         modelClasses.add(com.azarnush.ptmalborz.models.LawInfo5.class);
-        modelClasses.add(com.azarnush.ptmalborz.models.LawInfo6.class);
         MODEL_CLASSES = Collections.unmodifiableSet(modelClasses);
     }
 
@@ -40,9 +40,9 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         Map<Class<? extends RealmModel>, OsObjectSchemaInfo> infoMap = new HashMap<Class<? extends RealmModel>, OsObjectSchemaInfo>(5);
         infoMap.put(com.azarnush.ptmalborz.models.LawInfo2.class, io.realm.com_azarnush_ptmalborz_models_LawInfo2RealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(com.azarnush.ptmalborz.models.LawInfo3.class, io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.getExpectedObjectSchemaInfo());
+        infoMap.put(com.azarnush.ptmalborz.models.LawInfo6.class, io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(com.azarnush.ptmalborz.models.LawInfo4.class, io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.getExpectedObjectSchemaInfo());
         infoMap.put(com.azarnush.ptmalborz.models.LawInfo5.class, io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.getExpectedObjectSchemaInfo());
-        infoMap.put(com.azarnush.ptmalborz.models.LawInfo6.class, io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.getExpectedObjectSchemaInfo());
         return infoMap;
     }
 
@@ -56,14 +56,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
             return io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.createColumnInfo(schemaInfo);
         }
+        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            return io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createColumnInfo(schemaInfo);
+        }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             return io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.createColumnInfo(schemaInfo);
         }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             return io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.createColumnInfo(schemaInfo);
-        }
-        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            return io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createColumnInfo(schemaInfo);
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -78,14 +78,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
             return "LawInfo3";
         }
+        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            return "LawInfo6";
+        }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             return "LawInfo4";
         }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             return "LawInfo5";
-        }
-        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            return "LawInfo6";
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -103,14 +103,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
                 return clazz.cast(new io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy());
             }
+            if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+                return clazz.cast(new io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy());
+            }
             if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
                 return clazz.cast(new io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy());
             }
             if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
                 return clazz.cast(new io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy());
-            }
-            if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-                return clazz.cast(new io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy());
             }
             throw getMissingProxyClassException(clazz);
         } finally {
@@ -137,6 +137,10 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             com_azarnush_ptmalborz_models_LawInfo3RealmProxy.LawInfo3ColumnInfo columnInfo = (com_azarnush_ptmalborz_models_LawInfo3RealmProxy.LawInfo3ColumnInfo) realm.getSchema().getColumnInfo(com.azarnush.ptmalborz.models.LawInfo3.class);
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.copyOrUpdate(realm, columnInfo, (com.azarnush.ptmalborz.models.LawInfo3) obj, update, cache, flags));
         }
+        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            com_azarnush_ptmalborz_models_LawInfo6RealmProxy.LawInfo6ColumnInfo columnInfo = (com_azarnush_ptmalborz_models_LawInfo6RealmProxy.LawInfo6ColumnInfo) realm.getSchema().getColumnInfo(com.azarnush.ptmalborz.models.LawInfo6.class);
+            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.copyOrUpdate(realm, columnInfo, (com.azarnush.ptmalborz.models.LawInfo6) obj, update, cache, flags));
+        }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             com_azarnush_ptmalborz_models_LawInfo4RealmProxy.LawInfo4ColumnInfo columnInfo = (com_azarnush_ptmalborz_models_LawInfo4RealmProxy.LawInfo4ColumnInfo) realm.getSchema().getColumnInfo(com.azarnush.ptmalborz.models.LawInfo4.class);
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.copyOrUpdate(realm, columnInfo, (com.azarnush.ptmalborz.models.LawInfo4) obj, update, cache, flags));
@@ -144,10 +148,6 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             com_azarnush_ptmalborz_models_LawInfo5RealmProxy.LawInfo5ColumnInfo columnInfo = (com_azarnush_ptmalborz_models_LawInfo5RealmProxy.LawInfo5ColumnInfo) realm.getSchema().getColumnInfo(com.azarnush.ptmalborz.models.LawInfo5.class);
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.copyOrUpdate(realm, columnInfo, (com.azarnush.ptmalborz.models.LawInfo5) obj, update, cache, flags));
-        }
-        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            com_azarnush_ptmalborz_models_LawInfo6RealmProxy.LawInfo6ColumnInfo columnInfo = (com_azarnush_ptmalborz_models_LawInfo6RealmProxy.LawInfo6ColumnInfo) realm.getSchema().getColumnInfo(com.azarnush.ptmalborz.models.LawInfo6.class);
-            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.copyOrUpdate(realm, columnInfo, (com.azarnush.ptmalborz.models.LawInfo6) obj, update, cache, flags));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -162,12 +162,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             io.realm.com_azarnush_ptmalborz_models_LawInfo2RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo2) object, cache);
         } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
             io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo3) object, cache);
+        } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo6) object, cache);
         } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo4) object, cache);
         } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo5) object, cache);
-        } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo6) object, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -189,12 +189,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo2RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo2) object, cache);
             } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo3) object, cache);
+            } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+                io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo6) object, cache);
             } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo4) object, cache);
             } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo5) object, cache);
-            } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-                io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insert(realm, (com.azarnush.ptmalborz.models.LawInfo6) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
@@ -203,12 +203,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo2RealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.insert(realm, iterator, cache);
+                } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+                    io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.insert(realm, iterator, cache);
                 } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.insert(realm, iterator, cache);
-                } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-                    io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insert(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -226,12 +226,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
             io.realm.com_azarnush_ptmalborz_models_LawInfo2RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo2) obj, cache);
         } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
             io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo3) obj, cache);
+        } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo6) obj, cache);
         } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo4) obj, cache);
         } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo5) obj, cache);
-        } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo6) obj, cache);
         } else {
             throw getMissingProxyClassException(clazz);
         }
@@ -253,12 +253,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo2RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo2) object, cache);
             } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo3) object, cache);
+            } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+                io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo6) object, cache);
             } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo4) object, cache);
             } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
                 io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo5) object, cache);
-            } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-                io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insertOrUpdate(realm, (com.azarnush.ptmalborz.models.LawInfo6) object, cache);
             } else {
                 throw getMissingProxyClassException(clazz);
             }
@@ -267,12 +267,12 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo2RealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.insertOrUpdate(realm, iterator, cache);
+                } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+                    io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
                     io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.insertOrUpdate(realm, iterator, cache);
-                } else if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-                    io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.insertOrUpdate(realm, iterator, cache);
                 } else {
                     throw getMissingProxyClassException(clazz);
                 }
@@ -291,14 +291,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
+        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
+        }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
-        }
-        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createOrUpdateUsingJsonObject(realm, json, update));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -314,14 +314,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.createUsingJsonStream(realm, reader));
         }
+        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createUsingJsonStream(realm, reader));
+        }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.createUsingJsonStream(realm, reader));
         }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.createUsingJsonStream(realm, reader));
-        }
-        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createUsingJsonStream(realm, reader));
         }
         throw getMissingProxyClassException(clazz);
     }
@@ -338,14 +338,14 @@ class DefaultRealmModuleMediator extends RealmProxyMediator {
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo3.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo3RealmProxy.createDetachedCopy((com.azarnush.ptmalborz.models.LawInfo3) realmObject, 0, maxDepth, cache));
         }
+        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
+            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createDetachedCopy((com.azarnush.ptmalborz.models.LawInfo6) realmObject, 0, maxDepth, cache));
+        }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo4.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo4RealmProxy.createDetachedCopy((com.azarnush.ptmalborz.models.LawInfo4) realmObject, 0, maxDepth, cache));
         }
         if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo5.class)) {
             return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo5RealmProxy.createDetachedCopy((com.azarnush.ptmalborz.models.LawInfo5) realmObject, 0, maxDepth, cache));
-        }
-        if (clazz.equals(com.azarnush.ptmalborz.models.LawInfo6.class)) {
-            return clazz.cast(io.realm.com_azarnush_ptmalborz_models_LawInfo6RealmProxy.createDetachedCopy((com.azarnush.ptmalborz.models.LawInfo6) realmObject, 0, maxDepth, cache));
         }
         throw getMissingProxyClassException(clazz);
     }
