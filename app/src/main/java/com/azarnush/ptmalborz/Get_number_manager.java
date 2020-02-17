@@ -71,7 +71,7 @@ public class Get_number_manager extends AppCompatActivity {
     }
     //get isRegister and codRegister
     public void sendJsonObjectRequest2() {
-        RequestQueue queue = Volley.newRequestQueue(this);
+        RequestQueue queue = Volley.newRequestQueue(getBaseContext());
         String url = url_Foundation + "generate-user-code/" + mobile_number;
 
 

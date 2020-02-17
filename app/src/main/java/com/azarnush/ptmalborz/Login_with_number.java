@@ -36,7 +36,7 @@ public class Login_with_number extends AppCompatActivity {
 
         pinGroup = findViewById(R.id.pinGroup);
         btn_login_with_number = findViewById(R.id.login);
-        txt_Counter =  findViewById(R.id.txt_Counter);
+        txt_Counter = findViewById(R.id.txt_Counter);
 
         btn_login_with_number.setText("تایید");
         count();
@@ -52,22 +52,27 @@ public class Login_with_number extends AppCompatActivity {
 
                 if (btn_login_with_number.getText() == "تایید" || btn_login_with_number.getText() == "ارسال مجدد کد") {
 
-                    String user_cod = (String) pinGroup.getText();
-                    if (register_cod.equalsIgnoreCase(user_cod)) {
-                        if (counter != 0) {
-                            Get_number_manager.isRegister = "true";
-                           Intent i = new Intent(getApplicationContext(), HomeActivity.class);
-
-                           startActivity(i);
-                        } else
-                            Toast.makeText(getApplicationContext(), "زمان شما تمام شد", Toast.LENGTH_LONG).show();
-
-
+                    if (btn_login_with_number.getText() == "ارسال مجدد کد") {
+                        sendJsonObjectRequest_codRegister();
                     } else {
-                        Toast.makeText(getApplicationContext(), "کد ارسالی شما اشتباه می باشد", Toast.LENGTH_LONG).show();
+                        String user_cod = (String) pinGroup.getText();
+                        if (register_cod.equalsIgnoreCase(user_cod)) {
+                            if (counter != 0) {
+                                Get_number_manager.isRegister = "true";
+                                Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+                                startActivity(i);
+                            } else
+                                Toast.makeText(getApplicationContext(), "زمان شما تمام شد", Toast.LENGTH_LONG).show();
 
+
+                        } else {
+                            Toast.makeText(getApplicationContext(), "کد ارسالی شما اشتباه می باشد", Toast.LENGTH_LONG).show();
+
+                        }
                     }
-                }else {
+
+
+                } else {
 
 
                     sendJsonObjectRequest_codRegister();
@@ -89,16 +94,16 @@ public class Login_with_number extends AppCompatActivity {
                 if (counter != 0) {
                     counter--;
 
-                }else{
+                } else {
                     btn_login_with_number.setText("ارسال مجدد کد");
-
-
+                    pinGroup.setText("0000");
 
                 }
             }
 
             public void onFinish() {
                 counter = 30;
+
 
             }
         }.start();
